@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 397218b9db2d73f499b479a6309023db, type: 3}
-  m_Name: LevelMedium-1
+  m_Name: LevelMedium-1 (penjumlahan)
   m_EditorClassIdentifier: 
   bilangan1: 3
   bilangan2: 2
