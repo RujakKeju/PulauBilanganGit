@@ -5,5 +5,5 @@ public class CharacterDataSO : ScriptableObject
 {
     public string characterName;
     public Sprite characterSprite;
-    public string description;
+    public string description; //deskripsi mengenai karakter
 }

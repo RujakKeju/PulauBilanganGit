@@ -3,9 +3,9 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class EasyLevelManager : MonoBehaviour
+public class EasyLevelManager : MonoBehaviour 
 {
-    [SerializeField] private MathLevelSO levelData;
+    [SerializeField] private MathLevelSO levelData; //
     [SerializeField] private Transform spawnAreaBilangan1;
     [SerializeField] private Transform spawnAreaBilangan2;
     [SerializeField] private TextMeshProUGUI jawabanText;
@@ -31,8 +31,8 @@ public class EasyLevelManager : MonoBehaviour
 
     private void GenerateQuestion()
     {
-        SpawnAnimal(levelData.bilangan1, spawnAreaBilangan1, levelData.animalPrefab1);
-        SpawnAnimal(levelData.bilangan2, spawnAreaBilangan2, levelData.animalPrefab2);
+        SpawnAnimalSoal(levelData.bilangan1, spawnAreaBilangan1, levelData.animalPrefab1); //membutuhkan count, parent, pefabs
+        SpawnAnimalSoal(levelData.bilangan2, spawnAreaBilangan2, levelData.animalPrefab2);
 
         jawabanText.text = "?";
         operasiText.text = levelData.GetOperationSymbol();
@@ -74,7 +74,7 @@ public class EasyLevelManager : MonoBehaviour
                 ClearSpawnedAnimals(spawnPoint);
 
                 // Spawn prefab sesuai angka jawaban
-                SpawnAnimal(answerValue, spawnPoint, levelData.animalPrefab1);
+                SpawnAnimalSoal(answerValue, spawnPoint, levelData.animalPrefab1);
             }
             else
             {
@@ -98,7 +98,7 @@ public class EasyLevelManager : MonoBehaviour
         }
     }
 
-    private void SpawnAnimal(int count, Transform parent, GameObject prefab)
+    private void SpawnAnimalSoal(int count, Transform parent, GameObject prefab) //soal
     {
         for (int i = 0; i < count; i++)
         {

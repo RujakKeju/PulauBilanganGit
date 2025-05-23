@@ -1002,7 +1002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9f10d56a7a11e545921f2cf5f30a06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelData: {fileID: 11400000, guid: c903405d1a2942d4baa2760159852a0b, type: 2}
+  levelData: {fileID: 11400000, guid: 372903fd3a70ebf4fb2ad1fedb0cc3e1, type: 2}
   spawnAreaBilangan1: {fileID: 1431539793}
   spawnAreaBilangan2: {fileID: 1659017419}
   jawabanText: {fileID: 2067753557}

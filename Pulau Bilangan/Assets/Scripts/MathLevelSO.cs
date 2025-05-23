@@ -1,7 +1,7 @@
 using UnityEngine;
 
-public enum Difficulty { Easy, Medium, Hard }
-public enum MathOperation { Addition, Subtraction, Multiplication, Division }
+public enum Difficulty { Easy, Medium, Hard } //daftar pilihan memilih tingkat kesulitan
+public enum MathOperation { Addition, Subtraction, Multiplication, Division } //jenis operasi bilangan
 
 [CreateAssetMenu(fileName = "NewMathLevel", menuName = "MathGame/Level")]
 public class MathLevelSO : ScriptableObject
