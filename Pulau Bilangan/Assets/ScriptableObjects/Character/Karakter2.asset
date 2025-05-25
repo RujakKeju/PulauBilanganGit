@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a8e1a81aefc394d88dcc8f25c0cd3d, type: 3}
   m_Name: Karakter2
   m_EditorClassIdentifier: 
-  characterName: Hantu
-  characterSprite: {fileID: 21300000, guid: f34a9285e62ac334dbc995e9b5784ba1, type: 3}
+  characterName: panda
+  characterSprite: {fileID: 21300000, guid: 16645fb1210133e4e9663ef247a582bf, type: 3}
   description: d

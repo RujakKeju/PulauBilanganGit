@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a8e1a81aefc394d88dcc8f25c0cd3d, type: 3}
   m_Name: karakter6
   m_EditorClassIdentifier: 
-  characterName: gigi
-  characterSprite: {fileID: 21300000, guid: c4c548a339b4d41a590928c0c98934a7, type: 3}
+  characterName: bear
+  characterSprite: {fileID: 21300000, guid: 986beea18e0fe5a4894f6c5700b37ca1, type: 3}
   description: 

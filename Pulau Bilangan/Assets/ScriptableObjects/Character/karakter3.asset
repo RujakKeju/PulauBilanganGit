@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a8e1a81aefc394d88dcc8f25c0cd3d, type: 3}
   m_Name: karakter3
   m_EditorClassIdentifier: 
-  characterName: Macan
-  characterSprite: {fileID: 831398740, guid: 1201c14bb4ee74d8e99e56dc4f3f4fd1, type: 3}
+  characterName: fox
+  characterSprite: {fileID: 21300000, guid: 31eea1defced4094b9cbd7ecbd5721e3, type: 3}
   description: 
