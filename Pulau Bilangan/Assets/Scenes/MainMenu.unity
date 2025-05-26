@@ -1610,8 +1610,8 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 300, y: 300}
-  m_Spacing: {x: 50, y: 0}
+  m_CellSize: {x: 250, y: 250}
+  m_Spacing: {x: 152, y: 25}
   m_Constraint: 1
   m_ConstraintCount: 3
 --- !u!1 &945761436
@@ -2962,7 +2962,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4c3ea30232f0ec54da4a3117c156303c, type: 2}
   - {fileID: 11400000, guid: 00e74af62ca37d943bcc2d9a1e412132, type: 2}
   - {fileID: 11400000, guid: 7871a511417806347b1a668cf98b2e5e, type: 2}
-  characterButtonPrefab: {fileID: 5636108701206086950, guid: d2ab42faba5e7894f8a5ba80c3edd08b, type: 3}
+  characterButtonPrefab: {fileID: 7606092506493914390, guid: e821832af9a8e5748942faa7cbf912c6, type: 3}
   buttonContainer: {fileID: 864300507}
   nameInputManager: {fileID: 2045648700}
 --- !u!114 &2045648700
@@ -3157,7 +3157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2112837154
 RectTransform:
   m_ObjectHideFlags: 0
