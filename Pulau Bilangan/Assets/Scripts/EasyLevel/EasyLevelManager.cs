@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -41,10 +41,9 @@ public class EasyLevelManager : MonoBehaviour
 
     private void GenerateAnswers()
     {
-        // Masukkan jawaban benar
+        answerOptions.Clear(); // reset list biar nggak numpuk dari sebelumnya
         answerOptions.Add(levelData.jawaban);
 
-        // Tambahkan 2 jawaban acak
         while (answerOptions.Count < 3)
         {
             int randomWrongAnswer = Random.Range(levelData.jawaban - 3, levelData.jawaban + 3);
@@ -54,31 +53,31 @@ public class EasyLevelManager : MonoBehaviour
             }
         }
 
-        // Acak jawaban
         answerOptions.Shuffle();
 
-        // Set jawaban ke tombol
         for (int i = 0; i < answerButtons.Length; i++)
         {
             int answerValue = answerOptions[i];
 
-            // Pastikan kita reset listener agar tidak menumpuk
             answerButtons[i].onClick.RemoveAllListeners();
             answerButtons[i].onClick.AddListener(() => CheckAnswer(answerValue));
 
-            // Cari child "SpawnPoint"
             Transform spawnPoint = answerButtons[i].transform.Find("SpawnPoint");
             if (spawnPoint != null)
             {
-                // Bersihkan ikan lama kalau ada
                 ClearSpawnedAnimals(spawnPoint);
-
-                // Spawn prefab sesuai angka jawaban
                 SpawnAnimalSoal(answerValue, spawnPoint, levelData.animalPrefab1);
+            }
+
+            //  Tambahan di sini: set jumlah teks
+            TextMeshProUGUI jumlahText = answerButtons[i].transform.Find("JumlahText")?.GetComponent<TextMeshProUGUI>();
+            if (jumlahText != null)
+            {
+                jumlahText.text = answerValue.ToString();
             }
             else
             {
-                Debug.LogWarning("SpawnPoint not found in " + answerButtons[i].name);
+                Debug.LogWarning("JumlahText not found in " + answerButtons[i].name);
             }
         }
     }
@@ -104,7 +103,12 @@ public class EasyLevelManager : MonoBehaviour
         {
             Instantiate(prefab, parent);
         }
+
+
+
     }
+
+
 
     private void ClearSpawnedAnimals(Transform spawnPoint)
     {
