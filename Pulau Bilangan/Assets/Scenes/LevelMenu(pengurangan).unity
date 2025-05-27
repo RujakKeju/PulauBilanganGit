@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 16695057}
   - component: {fileID: 16695056}
   m_Layer: 5
-  m_Name: mudah
+  m_Name: sulit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -156,7 +156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.9, y: 16.1}
+  m_AnchoredPosition: {x: -13.3, y: 0.5}
   m_SizeDelta: {x: 270.9, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &16695056
@@ -181,8 +181,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: SULIT
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4dd5f18b3485ea64f840b5771310510d, type: 2}
-  m_sharedMaterial: {fileID: -6614776767797303582, guid: 4dd5f18b3485ea64f840b5771310510d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7d0f17686169a0f4581cba2da2c6478c, type: 2}
+  m_sharedMaterial: {fileID: -5786308333785937809, guid: 7d0f17686169a0f4581cba2da2c6478c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -206,8 +206,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 56
+  m_fontSizeBase: 56
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -290,8 +290,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 107}
-  m_SizeDelta: {x: 237.3, y: 50}
+  m_AnchoredPosition: {x: -1.39, y: 72.2}
+  m_SizeDelta: {x: 241.36, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &221928259
 MonoBehaviour:
@@ -322,8 +322,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286939682
-  m_fontColor: {r: 0.1329654, g: 0.5083053, b: 0.52201253, a: 1}
+    rgba: 4292459167
+  m_fontColor: {r: 0.62352943, g: 0.7294118, b: 0.85098046, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -340,15 +340,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 65
-  m_fontSizeBase: 65
+  m_fontSize: 75
+  m_fontSizeBase: 75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -959,7 +959,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13.3, y: 16.1}
+  m_AnchoredPosition: {x: -13.3, y: 0.5}
   m_SizeDelta: {x: 270.9, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &763076324
@@ -984,8 +984,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: MUDAH
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4dd5f18b3485ea64f840b5771310510d, type: 2}
-  m_sharedMaterial: {fileID: -6614776767797303582, guid: 4dd5f18b3485ea64f840b5771310510d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7d0f17686169a0f4581cba2da2c6478c, type: 2}
+  m_sharedMaterial: {fileID: -5786308333785937809, guid: 7d0f17686169a0f4581cba2da2c6478c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1009,8 +1009,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 56
+  m_fontSizeBase: 56
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1071,7 +1071,7 @@ GameObject:
   - component: {fileID: 959051637}
   - component: {fileID: 959051636}
   m_Layer: 5
-  m_Name: whale
+  m_Name: shell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1148,7 +1148,7 @@ GameObject:
   - component: {fileID: 1169978095}
   - component: {fileID: 1169978094}
   m_Layer: 5
-  m_Name: mudah
+  m_Name: sedang
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1170,7 +1170,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.6, y: 16.1}
+  m_AnchoredPosition: {x: -13.3, y: 0.5}
   m_SizeDelta: {x: 270.9, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1169978094
@@ -1195,8 +1195,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: SEDANG
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4dd5f18b3485ea64f840b5771310510d, type: 2}
-  m_sharedMaterial: {fileID: -6614776767797303582, guid: 4dd5f18b3485ea64f840b5771310510d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7d0f17686169a0f4581cba2da2c6478c, type: 2}
+  m_sharedMaterial: {fileID: -5786308333785937809, guid: 7d0f17686169a0f4581cba2da2c6478c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1220,8 +1220,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 56
+  m_fontSizeBase: 56
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1283,7 +1283,7 @@ GameObject:
   - component: {fileID: 1310105415}
   - component: {fileID: 1310105414}
   m_Layer: 5
-  m_Name: btMudah
+  m_Name: button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2140,7 +2140,7 @@ GameObject:
   - component: {fileID: 2046677589}
   - component: {fileID: 2046677588}
   m_Layer: 5
-  m_Name: button
+  m_Name: bgkata
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
