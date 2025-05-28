@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class EasyLevelManager : MonoBehaviour 
 {
-    [SerializeField] private MathLevelSO levelData; //
+    [SerializeField] private MathLevelSO levelData; 
     [SerializeField] private Transform spawnAreaBilangan1;
     [SerializeField] private Transform spawnAreaBilangan2;
     [SerializeField] private TextMeshProUGUI jawabanText;

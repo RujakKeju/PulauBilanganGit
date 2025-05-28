@@ -6,8 +6,8 @@ public class HardLevelManager : MonoBehaviour
 {
     [SerializeField] private MathLevelSO levelData;
     [SerializeField] private Transform spawnAreaBilangan1;
-    [SerializeField] private Transform spawnAreaBilangan2;
-    [SerializeField] private TextMeshProUGUI jawabanText;
+    [SerializeField] private Transform spawnAreaJawaban;
+    [SerializeField] private TextMeshProUGUI Bilangan2;
     [SerializeField] private TextMeshProUGUI operasiText;
     [SerializeField] private TextMeshProUGUI difficultyText;
 
@@ -28,9 +28,9 @@ public class HardLevelManager : MonoBehaviour
     private void GenerateLevelUI()
     {
         SpawnFish(levelData.bilangan1, spawnAreaBilangan1, levelData.animalPrefab1);
-        SpawnFish(levelData.bilangan2, spawnAreaBilangan2, levelData.animalPrefab2);
+        SpawnFish(levelData.jawaban, spawnAreaJawaban, levelData.animalPrefab2);
 
-        jawabanText.text = levelData.jawaban.ToString();
+        Bilangan2.text = "0";
         operasiText.text = levelData.GetOperationSymbol();
         difficultyText.text = levelData.difficulty.ToString();
     }
@@ -45,7 +45,7 @@ public class HardLevelManager : MonoBehaviour
 
     private void CheckAnswer()
     {
-        if (fishCollector.CollectedFish == levelData.jawaban)
+        if (fishCollector.CollectedFish == levelData.bilangan2)
         {
             correctPanel.SetActive(true);
         }

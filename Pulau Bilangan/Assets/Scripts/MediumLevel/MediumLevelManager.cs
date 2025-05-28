@@ -14,8 +14,9 @@ public class MediumLevelManager : MonoBehaviour
         checkAnswerButton.onClick.AddListener(CheckAnswer);
     }
 
-    void CheckAnswer()
+   void CheckAnswer()
     {
+
         if (waterZoneCounter.FishCount == currentLevel.jawaban)
         {
             correctPanel.SetActive(true);
