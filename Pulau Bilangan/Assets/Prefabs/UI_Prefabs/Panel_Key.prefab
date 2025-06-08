@@ -631,7 +631,6 @@ GameObject:
   - component: {fileID: 4929202446363994722}
   - component: {fileID: 8364744124932460151}
   - component: {fileID: 2275077139744312112}
-  - component: {fileID: -3529925439635028642}
   m_Layer: 5
   m_Name: Panel_Key
   m_TagString: Untagged
@@ -697,23 +696,3 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &-3529925439635028642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7798600846111857361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f728a3226dce034a926be0b9de3f1b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panel_key: {fileID: 0}
-  panelSempoa: {fileID: 0}
-  ikanPrefab: {fileID: 0}
-  gridArea: {fileID: 0}
-  countText: {fileID: 0}
-  buttonKunci: {fileID: 0}
-  buttonClose: {fileID: 0}
-  maxIkan: 30

@@ -735,7 +735,6 @@ GameObject:
   - component: {fileID: 1406163897192010943}
   - component: {fileID: 3601193601937447630}
   - component: {fileID: 5511666339096941641}
-  - component: {fileID: -5019514492587018586}
   m_Layer: 5
   m_Name: Panel_Help
   m_TagString: Untagged
@@ -801,24 +800,3 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &-5019514492587018586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7657239729560445698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d83e03cfcdfeec47994c64bc3d2f0b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  overlayPanel: {fileID: 7657239729560445698}
-  boardPanel: {fileID: 8333654152953753581}
-  helpText: {fileID: 8196892902405417607}
-  buttonHelp: {fileID: 0}
-  buttonClose: {fileID: 6405534612776039523}
-  buttonSound: {fileID: 1548967251714860732}
-  audioSource: {fileID: 0}
-  helpContent: 
-  voiceClip: {fileID: 8300000, guid: ac50e9f750a6a58498a731262db89766, type: 3}

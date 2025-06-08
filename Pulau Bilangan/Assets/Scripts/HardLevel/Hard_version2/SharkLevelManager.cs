@@ -31,7 +31,7 @@ public class SharkLevelManager : MonoBehaviour
         SpawnFish(levelData.bilangan1, spawnAreaBilangan1, levelData.animalPrefab1);
 
         // Spawn ikan yang bisa dimakan sebagai bilangan2
-        SpawnFish(levelData.bilangan2, spawnAreaJawaban, levelData.animalPrefab2);
+        SpawnFish(levelData.jawaban, spawnAreaJawaban, levelData.animalPrefab2);
 
         Bilangan2.text = "0";
         operasiText.text = levelData.GetOperationSymbol();
