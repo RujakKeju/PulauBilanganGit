@@ -5,6 +5,12 @@ public class SharkMovement : MonoBehaviour
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
 
+    [Header("Boundary Settings")]
+    public float minX = -10f;
+    public float maxX = 10f;
+    public float minY = -10f;
+    public float maxY = 10f;
+
     private Rigidbody2D rb;
     private Vector2 moveInput;
 
@@ -21,7 +27,7 @@ public class SharkMovement : MonoBehaviour
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
 
-        // Opsional: Flip sprite hiu berdasarkan arah gerakan
+        // Flip sprite hiu berdasarkan arah gerak
         if (moveInput.x != 0)
         {
             Vector3 scale = transform.localScale;
@@ -29,10 +35,17 @@ public class SharkMovement : MonoBehaviour
             transform.localScale = scale;
         }
     }
-
+    
     void FixedUpdate()
     {
-        // Gerakkan hiu menggunakan physics
-        rb.MovePosition(rb.position + moveInput.normalized * moveSpeed * Time.fixedDeltaTime);
+        // Hitung posisi baru
+        Vector2 newPosition = rb.position + moveInput.normalized * moveSpeed * Time.fixedDeltaTime;
+
+        // Batasi posisi agar tidak keluar dari area
+        newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX);
+        newPosition.y = Mathf.Clamp(newPosition.y, minY, maxY);
+
+        // Pindahkan hiu ke posisi baru yang sudah dibatasi
+        rb.MovePosition(newPosition);
     }
 }
