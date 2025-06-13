@@ -3,7 +3,15 @@ guid: a163c566c30bb724092c074681006276
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - popup: {instanceID: 0}
+  - bintang1: {instanceID: 0}
+  - bintang2: {instanceID: 0}
+  - bintang3: {instanceID: 0}
+  - textBenar: {instanceID: 0}
+  - btnMainMenu: {instanceID: 0}
+  - btnReplay: {instanceID: 0}
+  - btnNext: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

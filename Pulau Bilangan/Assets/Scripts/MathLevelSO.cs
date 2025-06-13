@@ -22,8 +22,8 @@ public class MathLevelSO : ScriptableObject
         {
             MathOperation.Addition => "+",
             MathOperation.Subtraction => "-",
-            MathOperation.Multiplication => "×",
-            MathOperation.Division => "÷",
+            MathOperation.Multiplication => "x",
+            MathOperation.Division => ":",
             _ => "?"
         };
     }
