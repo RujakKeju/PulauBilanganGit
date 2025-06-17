@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 397218b9db2d73f499b479a6309023db, type: 3}
+  m_Name: LevelHard-2 (penjumlahan)
+  m_EditorClassIdentifier: 
+  bilangan1: 1
+  bilangan2: 5
+  jawaban: 6
+  operation: 0
+  difficulty: 2
+  animalPrefab1: {fileID: 424711271816674255, guid: 159d734cf89d4d149843333bfae28534, type: 3}
+  animalPrefab2: {fileID: 424711271816674255, guid: 159d734cf89d4d149843333bfae28534, type: 3}

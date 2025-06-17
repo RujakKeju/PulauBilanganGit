@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 397218b9db2d73f499b479a6309023db, type: 3}
   m_Name: LevelEasy-1 (penjumlahan)
   m_EditorClassIdentifier: 
-  bilangan1: 3
-  bilangan2: 2
-  jawaban: 5
+  bilangan1: 2
+  bilangan2: 1
+  jawaban: 3
   operation: 0
   difficulty: 0
   animalPrefab1: {fileID: 30480394759266424, guid: de5682bf1df481a468bc0384630b5ccf, type: 3}

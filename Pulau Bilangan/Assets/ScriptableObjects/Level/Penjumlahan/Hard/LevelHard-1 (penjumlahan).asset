@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: LevelHard-1 (penjumlahan)
   m_EditorClassIdentifier: 
   bilangan1: 1
-  bilangan2: 3
-  jawaban: 4
+  bilangan2: 2
+  jawaban: 3
   operation: 0
   difficulty: 2
-  animalPrefab1: {fileID: 424711271816674255, guid: 159d734cf89d4d149843333bfae28534, type: 3}
-  animalPrefab2: {fileID: 424711271816674255, guid: 159d734cf89d4d149843333bfae28534, type: 3}
+  animalPrefab1: {fileID: 5317533662710887102, guid: 269db3427494dde468015d320ac4fc8d, type: 3}
+  animalPrefab2: {fileID: 5317533662710887102, guid: 269db3427494dde468015d320ac4fc8d, type: 3}
