@@ -6,6 +6,48 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/others/MainMenu.unity
+    guid: 49c62a6c898224c428a8066ddf67eba3
+  - enabled: 1
+    path: Assets/Scenes/others/OperationMenu.unity
+    guid: 712b4a9b0bfcfb149bc474f5e26f1f11
+  - enabled: 1
     path: Assets/Scenes/Pengurangan/Medium/MediumLevel(pengurangan) 1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/DifficultyMenu(penjumlahan).unity
+    guid: dbfde5223857f5e459189b40443d84bd
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/DifficultyMenu(pengurangan).unity
+    guid: 9c074f00d82281041876b869732cfefb
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/DifficultyMenu(perkalian).unity
+    guid: 403fee64f51163f4cb72538e0a0c178c
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/DifficultyMenu(pembagian).unity
+    guid: 896dc05cc4f49f241ae8268f2b851193
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Level(penjumlahan).unity
+    guid: 23a9aa32a278e5c4cab80fac6e295b18
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Level(pengurangan).unity
+    guid: d85a03badfac22b4da75d5b74370add9
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Easy/EasyLevel(penjumlahan)1.unity
+    guid: 34e8db255acf84f43850e2f7f2cbdfe4
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Easy/EasyLevel(penjumlahan)Testting.unity
+    guid: 10c7cf69fc9d3634fbea58d29c5479b6
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Medium/MediumLevel(penjumlahan) 1.unity
+    guid: c2758ff40eaeea64396f1b97cf87a940
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Medium/MediumLevel(penjumlahan) 2.unity
+    guid: 2d34481acd995f74f9b990f047fd4a29
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Easy/EasyLevel(pengurangan).unity
+    guid: 805cddfa2e9287f4aabf1aa80c8501d4
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Easy/Nigga.unity
+    guid: e433ef47af2bddd4099b6d0f0f897d0f
   m_configObjects: {}

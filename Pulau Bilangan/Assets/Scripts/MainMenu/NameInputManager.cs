@@ -1,6 +1,9 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+
 
 public class NameInputManager : MonoBehaviour
 {
@@ -61,5 +64,10 @@ public class NameInputManager : MonoBehaviour
         {
             Debug.LogError("SelectedCharacterData is null!");
         }
+    }
+
+    public void OnClickLanjut()
+    {
+        SceneManager.LoadScene("OperationMenu"); // Pastikan nama scene sesuai
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PanelBenarController : MonoBehaviour
 {
@@ -20,6 +21,16 @@ public class PanelBenarController : MonoBehaviour
         textBenar.gameObject.SetActive(false);
 
         StartCoroutine(AnimasiPanel());
+
+        // Assign listener (pastikan tidak dobel)
+        btnMainMenu.onClick.RemoveAllListeners();
+        btnMainMenu.onClick.AddListener(OnMainMenu);
+
+        btnReplay.onClick.RemoveAllListeners();
+        btnReplay.onClick.AddListener(OnReplay);
+
+        btnNext.onClick.RemoveAllListeners();
+        btnNext.onClick.AddListener(OnNextLevel);
     }
 
     IEnumerator AnimasiPanel()
@@ -41,5 +52,38 @@ public class PanelBenarController : MonoBehaviour
 
         textBenar.gameObject.SetActive(true);
         LeanTween.scale(textBenar.gameObject, Vector3.one, 0.4f).setFrom(Vector3.zero).setEaseOutBack();
+    }
+
+    public void OnMainMenu()
+    {
+        SceneManager.LoadScene("Level(Penjumlahan)");
+    }
+
+    public void OnReplay()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void OnNextLevel()
+    {
+        var state = GameStateManager.Instance;
+        var op = state.selectedOperation;
+        var diff = state.selectedDifficulty;
+
+        state.currentLevelIndex++;
+
+        // Ambil level list berdasarkan operasi & difficulty
+        LevelListSO list = LevelListProvider.Instance.GetLevelList(op, diff);
+
+        if (state.currentLevelIndex < list.sceneNames.Length)
+        {
+            string nextScene = list.sceneNames[state.currentLevelIndex];
+            SceneManager.LoadScene(nextScene);
+        }
+        else
+        {
+            Debug.Log("Semua level selesai!");
+            SceneManager.LoadScene("MainMenu"); // atau scene 'You Win' kalau ada
+        }
     }
 }
