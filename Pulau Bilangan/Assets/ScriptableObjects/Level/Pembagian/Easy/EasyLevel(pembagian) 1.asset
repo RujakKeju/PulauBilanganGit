@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 397218b9db2d73f499b479a6309023db, type: 3}
   m_Name: EasyLevel(pembagian) 1
   m_EditorClassIdentifier: 
-  bilangan1: 4
+  bilangan1: 6
   bilangan2: 2
-  jawaban: 2
+  jawaban: 3
   operation: 3
   difficulty: 0
-  animalPrefab1: {fileID: 7385358970512148291, guid: 0f95db392c459a942a2a7766c893074c, type: 3}
-  animalPrefab2: {fileID: 7385358970512148291, guid: 0f95db392c459a942a2a7766c893074c, type: 3}
+  animalPrefab1: {fileID: 8033219365078226386, guid: 3ba27de9ae8cddd40bb1bb71de6176fb, type: 3}
+  animalPrefab2: {fileID: 8033219365078226386, guid: 3ba27de9ae8cddd40bb1bb71de6176fb, type: 3}

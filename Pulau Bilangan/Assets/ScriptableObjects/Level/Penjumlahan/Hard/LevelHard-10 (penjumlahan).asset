@@ -17,5 +17,5 @@ MonoBehaviour:
   jawaban: 18
   operation: 0
   difficulty: 2
-  animalPrefab1: {fileID: 8033219365078226386, guid: 3ba27de9ae8cddd40bb1bb71de6176fb, type: 3}
-  animalPrefab2: {fileID: 8033219365078226386, guid: 3ba27de9ae8cddd40bb1bb71de6176fb, type: 3}
+  animalPrefab1: {fileID: 4993687999749071377, guid: 9881a91921563474d97c51bbe75c4368, type: 3}
+  animalPrefab2: {fileID: 4993687999749071377, guid: 9881a91921563474d97c51bbe75c4368, type: 3}

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 397218b9db2d73f499b479a6309023db, type: 3}
   m_Name: MediumLevel(pembagian) 1
   m_EditorClassIdentifier: 
-  bilangan1: 6
-  bilangan2: 3
-  jawaban: 2
+  bilangan1: 12
+  bilangan2: 4
+  jawaban: 3
   operation: 3
   difficulty: 1
   animalPrefab1: {fileID: 7898533382438910093, guid: e86682a16e80762418a19867eaee6c45, type: 3}

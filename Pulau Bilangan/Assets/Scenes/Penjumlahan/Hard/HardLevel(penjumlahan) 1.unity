@@ -381,7 +381,7 @@ PrefabInstance:
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 68aa8558e78d6c045ac982781f37f360, type: 3}
+      objectReference: {fileID: 21300000, guid: 74719536344508b42833aa1721195fc2, type: 3}
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -1267,7 +1267,7 @@ PrefabInstance:
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 68aa8558e78d6c045ac982781f37f360, type: 3}
+      objectReference: {fileID: 21300000, guid: 74719536344508b42833aa1721195fc2, type: 3}
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -2145,7 +2145,7 @@ PrefabInstance:
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 68aa8558e78d6c045ac982781f37f360, type: 3}
+      objectReference: {fileID: 21300000, guid: 74719536344508b42833aa1721195fc2, type: 3}
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -3078,6 +3078,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8333654152953753581, guid: 9ceec62e235e9344aa508a6706442341, type: 3}
   m_PrefabInstance: {fileID: 109465932}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1104732498 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9052429414407120303, guid: d002d2dcd92031e40bed1e7ed36ab0fa, type: 3}
+  m_PrefabInstance: {fileID: 1322505087}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1108343564 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4666392898329405040, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
@@ -3142,7 +3147,7 @@ MonoBehaviour:
   operasiText: {fileID: 419922009}
   difficultyText: {fileID: 1127784700}
   correctPanel: {fileID: 1108343564}
-  wrongPanel: {fileID: 526855942}
+  wrongPanel: {fileID: 1104732498}
   checkAnswerButton: {fileID: 1991174546}
   fishCollector: {fileID: 1067929679}
 --- !u!114 &1118921718
@@ -3164,7 +3169,7 @@ MonoBehaviour:
   buttonClose: {fileID: 1771274056}
   buttonSound: {fileID: 2063162454}
   audioSource: {fileID: 0}
-  helpContent: KUMPULKAN HEWAN DENGAN MENGGERAKKAN KEPITING
+  helpContent: KUMPULKAN KERANG DENGAN MENGGERAKKAN KEPITING
   voiceClip: {fileID: 0}
 --- !u!114 &1118921719
 MonoBehaviour:
@@ -3288,7 +3293,7 @@ PrefabInstance:
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 68aa8558e78d6c045ac982781f37f360, type: 3}
+      objectReference: {fileID: 21300000, guid: 74719536344508b42833aa1721195fc2, type: 3}
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -5065,7 +5070,7 @@ PrefabInstance:
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 68aa8558e78d6c045ac982781f37f360, type: 3}
+      objectReference: {fileID: 21300000, guid: 74719536344508b42833aa1721195fc2, type: 3}
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -5435,7 +5440,7 @@ PrefabInstance:
     - target: {fileID: 1216036584308937657, guid: 4bf4a7addaedebb4291969d15d93cdb2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 68aa8558e78d6c045ac982781f37f360, type: 3}
+      objectReference: {fileID: 21300000, guid: 74719536344508b42833aa1721195fc2, type: 3}
     - target: {fileID: 5868222121170454278, guid: 4bf4a7addaedebb4291969d15d93cdb2, type: 3}
       propertyPath: m_Name
       value: ikanprefabHard

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: HardLevel(perkalian) 1
   m_EditorClassIdentifier: 
   bilangan1: 2
-  bilangan2: 3
-  jawaban: 6
+  bilangan2: 5
+  jawaban: 10
   operation: 2
   difficulty: 2
-  animalPrefab1: {fileID: 4993687999749071377, guid: 9881a91921563474d97c51bbe75c4368, type: 3}
-  animalPrefab2: {fileID: 4993687999749071377, guid: 9881a91921563474d97c51bbe75c4368, type: 3}
+  animalPrefab1: {fileID: 587111316821038634, guid: e63b828a4dc7546408e9ed8fd6feca78, type: 3}
+  animalPrefab2: {fileID: 587111316821038634, guid: e63b828a4dc7546408e9ed8fd6feca78, type: 3}
