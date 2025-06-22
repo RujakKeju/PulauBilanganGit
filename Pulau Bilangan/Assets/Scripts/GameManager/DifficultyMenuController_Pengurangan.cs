@@ -11,6 +11,11 @@ public class DifficultyMenuController_Pengurangan : MonoBehaviour
         GameStateManager.Instance.selectedDifficulty = (Difficulty)difficultyIndex;
 
         // Karena ini DifficultyMenu(Penjumlahan), langsung load scene Level-nya
-        SceneManager.LoadScene("Level(pengurangan)");
+        SceneTransitioner.Instance.LoadSceneWithTransition("Level(pengurangan)");
+    }
+
+    public void OnBackToOperationMenu()
+    {
+        SceneTransitioner.Instance.LoadSceneWithTransition("OperationMenu");
     }
 }

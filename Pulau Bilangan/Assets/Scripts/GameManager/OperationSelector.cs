@@ -25,6 +25,12 @@ public class OperationSelector : MonoBehaviour
                 break;
         }
 
-        SceneManager.LoadScene(sceneName);
+        SceneTransitioner.Instance.LoadSceneWithTransition(sceneName);
     }
+
+    public void OnBackToMainMenu()
+    {
+        SceneTransitioner.Instance.LoadSceneWithTransition("MainMenu");
+    }
+
 }

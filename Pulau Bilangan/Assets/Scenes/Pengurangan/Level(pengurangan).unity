@@ -3215,8 +3215,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   easyLevels: {fileID: 11400000, guid: 6cca2079fff29034bb45d356a2a5ee42, type: 2}
-  mediumLevels: {fileID: 0}
-  hardLevels: {fileID: 0}
+  mediumLevels: {fileID: 11400000, guid: 54b58c4dbdcd534408615f5620e46b95, type: 2}
+  hardLevels: {fileID: 11400000, guid: 732029ab3f1b0274d886067255984f06, type: 2}
   levelButtons:
   - {fileID: 1209311721}
   - {fileID: 1915426214}
@@ -3228,6 +3228,7 @@ MonoBehaviour:
   - {fileID: 463869087}
   - {fileID: 1100978593}
   - {fileID: 1580155375}
+  btnBack: {fileID: 162193835}
 --- !u!4 &1509240814
 Transform:
   m_ObjectHideFlags: 0

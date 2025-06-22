@@ -20,4 +20,19 @@ public class GameStateManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    public string GetProgressKey()
+    {
+        string op = selectedOperation switch
+        {
+            MathOperation.Addition => "penjumlahan",
+            MathOperation.Subtraction => "pengurangan",
+            MathOperation.Multiplication => "perkalian",
+            MathOperation.Division => "pembagian",
+            _ => "unknown"
+        };
+
+        return op.ToLower() + "_" + selectedDifficulty.ToString().ToLower();
+    }
+
+
 }

@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e147cb0c82a63a4690720fa3ec21d81, type: 3}
-  m_Name: Penjumlahan-Easy-leveList
+  m_Name: Pengurangan-Medium-LevelList
   m_EditorClassIdentifier: 
-  difficulty: 0
+  difficulty: 1
   sceneNames:
-  - EasyLevel(penjumlahan)1
-  - EasyLevel(penjumlahan)Testting
-  - Nigga
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - MediumLevel(pengurangan) 1
+  - MediumLevel(pengurangan) 2
+  - MediumLevel(pengurangan) 3
+  - MediumLevel(pengurangan) 4
+  - MediumLevel(pengurangan) 5
+  - MediumLevel(pengurangan) 6
+  - MediumLevel(pengurangan) 7
+  - MediumLevel(pengurangan) 8
+  - MediumLevel(pengurangan) 9
+  - MediumLevel(pengurangan) 10

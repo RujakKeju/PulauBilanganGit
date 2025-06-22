@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e147cb0c82a63a4690720fa3ec21d81, type: 3}
-  m_Name: Pengurangan-Easy-LevelList
+  m_Name: Perkalian-Hard-leveList
   m_EditorClassIdentifier: 
-  difficulty: 0
+  difficulty: 2
   sceneNames:
-  - EasyLevel(pengurangan)
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - HardLevel(perkalian) 1
+  - HardLevel(perkalian) 2
+  - HardLevel(perkalian) 3
+  - HardLevel(perkalian) 4
+  - HardLevel(perkalian) 5
+  - HardLevel(perkalian) 6
+  - HardLevel(perkalian) 7
+  - HardLevel(perkalian) 8
+  - HardLevel(perkalian) 9
+  - HardLevel(perkalian) 10

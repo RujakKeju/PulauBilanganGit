@@ -16,6 +16,11 @@ public class BetterParabolaFish : MonoBehaviour
     [SerializeField] private float pauseBetweenSwims = 0.5f;
     [SerializeField] private GameObject splashEffect;
 
+    [Header("Sound Settings")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip splashSound;
+
+
     private Rigidbody2D rb;
     private SpriteRenderer spriteRend;
     private Vector3 dragOffset;
@@ -166,6 +171,11 @@ public class BetterParabolaFish : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("WaterZone") && !hasEnteredWater)
         {
+            if (audioSource != null && splashSound != null)
+            {
+                audioSource.PlayOneShot(splashSound);
+            }
+
             hasEnteredWater = true;
             StartCoroutine(EnterWaterSlowly());
         }
@@ -187,6 +197,8 @@ public class BetterParabolaFish : MonoBehaviour
         if (splashEffect)
         {
             Instantiate(splashEffect, transform.position, Quaternion.identity);
+
+
         }
 
         rb.velocity = Vector2.zero;

@@ -896,3 +896,4 @@ MonoBehaviour:
   btnMainMenu: {fileID: 658071386008424783}
   btnReplay: {fileID: 8462402337283044262}
   btnNext: {fileID: 1266024957886772740}
+  easyLevelManager: {fileID: 0}

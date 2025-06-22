@@ -12,12 +12,15 @@ public class HelpPanelController : MonoBehaviour
 
     [TextArea] public string helpContent;
     public AudioClip voiceClip;
+    public AudioClip panelSound;
 
     private Vector3 offscreenPos;
     private Vector3 onscreenPos;
 
     void Start()
     {
+
+        audioSource = GetComponent<AudioSource>();
         // Sembunyikan di awal
         overlayPanel.SetActive(false);
         offscreenPos = new Vector3(0, Screen.height + 500, 0); // posisi di luar layar atas
@@ -35,12 +38,18 @@ public class HelpPanelController : MonoBehaviour
         helpText.text = helpContent;
         Time.timeScale = 0f; // pause game
 
+        if (panelSound != null && audioSource != null)
+            audioSource.PlayOneShot(panelSound);
+
         // Pindahkan papan ke tengah (animasi sederhana)
         LeanTween.move(boardPanel, onscreenPos, 0.5f).setEaseOutBack().setIgnoreTimeScale(true);
     }
 
     void CloseHelp()
     {
+
+        if (panelSound != null && audioSource != null)
+            audioSource.PlayOneShot(panelSound);
         // Keluarkan papan ke atas
         LeanTween.move(boardPanel, offscreenPos, 0.5f).setEaseInBack().setIgnoreTimeScale(true)
         .setOnComplete(() => {

@@ -8,8 +8,15 @@ public class DragSpawner : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public GameObject ikanPreviewPrefab;
 
+    public AudioSource audioSource;
+    public AudioClip dragSound;
+
+
     public void OnBeginDrag(PointerEventData eventData)
     {
+      
+
+
         previewIkan = Instantiate(ikanPreviewPrefab, transform.root);
         previewIkan.transform.position = eventData.position;
     }
@@ -22,6 +29,9 @@ public class DragSpawner : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        if (audioSource != null && dragSound != null)
+            audioSource.PlayOneShot(dragSound);
+
         if (RectTransformUtility.RectangleContainsScreenPoint(
             controller.gridArea.GetComponent<RectTransform>(), eventData.position))
         {

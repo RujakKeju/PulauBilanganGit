@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -9,8 +9,29 @@ public class PanelBenarController : MonoBehaviour
     public GameObject popup;
     public GameObject bintang1, bintang2, bintang3;
     public TextMeshProUGUI textBenar;
+    public EasyLevelManager easyLevelManager;
+
 
     public Button btnMainMenu, btnReplay, btnNext;
+
+    void Awake()
+    {
+        if (easyLevelManager == null)
+        {
+            easyLevelManager = FindObjectOfType<EasyLevelManager>();
+        }
+    }
+    void Start()
+    {
+        btnNext.onClick.RemoveAllListeners();
+        btnNext.onClick.AddListener(() =>
+        {
+            easyLevelManager.TombolNextSoal(true);
+            OnNextLevelBenar();
+        });
+    }
+
+
 
     private void OnEnable()
     {
@@ -30,7 +51,7 @@ public class PanelBenarController : MonoBehaviour
         btnReplay.onClick.AddListener(OnReplay);
 
         btnNext.onClick.RemoveAllListeners();
-        btnNext.onClick.AddListener(OnNextLevel);
+        btnNext.onClick.AddListener(OnNextLevelBenar);
     }
 
     IEnumerator AnimasiPanel()
@@ -64,26 +85,23 @@ public class PanelBenarController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void OnNextLevel()
+    public void OnNextLevelBenar()
     {
+        GameStateManager.Instance.currentLevelIndex++; // <– satu-satunya tempat naik index
+
         var state = GameStateManager.Instance;
-        var op = state.selectedOperation;
-        var diff = state.selectedDifficulty;
-
-        state.currentLevelIndex++;
-
-        // Ambil level list berdasarkan operasi & difficulty
-        LevelListSO list = LevelListProvider.Instance.GetLevelList(op, diff);
+        var list = LevelListProvider.Instance.GetLevelList(state.selectedOperation, state.selectedDifficulty);
 
         if (state.currentLevelIndex < list.sceneNames.Length)
         {
             string nextScene = list.sceneNames[state.currentLevelIndex];
-            SceneManager.LoadScene(nextScene);
+            SceneTransitioner.Instance.LoadSceneAntarSoal(nextScene);
         }
         else
         {
-            Debug.Log("Semua level selesai!");
-            SceneManager.LoadScene("MainMenu"); // atau scene 'You Win' kalau ada
+            SceneTransitioner.Instance.LoadSceneWithTransition("FinishPoin");
         }
     }
+
+
 }

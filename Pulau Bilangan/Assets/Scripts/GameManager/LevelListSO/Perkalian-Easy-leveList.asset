@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e147cb0c82a63a4690720fa3ec21d81, type: 3}
-  m_Name: Penjumlahan-Hard-levelList
+  m_Name: Perkalian-Easy-leveList
   m_EditorClassIdentifier: 
-  difficulty: 2
+  difficulty: 0
   sceneNames:
-  - HardLevel(penjumlahan) 1
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - EasyLevel(perkalian) 1
+  - EasyLevel(perkalian) 2
+  - EasyLevel(perkalian) 3
+  - EasyLevel(perkalian) 4
+  - EasyLevel(perkalian) 5
+  - EasyLevel(perkalian) 6
+  - EasyLevel(perkalian) 7
+  - EasyLevel(perkalian) 8
+  - EasyLevel(perkalian) 9
+  - EasyLevel(perkalian) 10

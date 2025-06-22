@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public enum Difficulty { Easy, Medium, Hard } //daftar pilihan memilih tingkat kesulitan
 public enum MathOperation { Addition, Subtraction, Multiplication, Division } //jenis operasi bilangan

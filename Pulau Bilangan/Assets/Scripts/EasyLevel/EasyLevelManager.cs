@@ -17,6 +17,14 @@ public class EasyLevelManager : MonoBehaviour
     [SerializeField] private GameObject panelBenar;
     [SerializeField] private GameObject panelSalah;
 
+    public AudioSource audioSource;
+    public AudioClip panelBenarSound;
+    public AudioClip panelSalahSound;
+
+
+    private bool jawabanBenar; // tambahkan di atas
+
+
     private List<int> answerOptions = new List<int>();
 
     void Start()
@@ -27,6 +35,8 @@ public class EasyLevelManager : MonoBehaviour
         // Pastikan panel benar dan salah tidak langsung muncul
         panelBenar.SetActive(false);
         panelSalah.SetActive(false);
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void GenerateQuestion()
@@ -81,21 +91,26 @@ public class EasyLevelManager : MonoBehaviour
             }
         }
     }
-    private void CheckAnswer(int selectedAnswer)
+
+    void CheckAnswer(int input)
     {
-        if (selectedAnswer == levelData.jawaban)
+        bool jawabanBenar = input == levelData.jawaban;
+
+        if (jawabanBenar)
         {
-            Debug.Log("Jawaban Benar!");
-            panelBenar.SetActive(true);
-            panelSalah.SetActive(false);
+            panelBenar.SetActive(true); // TAMPILKAN panel, tidak load scene
+            SFXManager.Instance.PlayCorrect();
+
         }
         else
         {
-            Debug.Log("Jawaban Salah!");
-            panelSalah.SetActive(true);
-            panelBenar.SetActive(false);
+            panelSalah.SetActive(true); // TAMPILKAN panel, tidak load scene
+            SFXManager.Instance.PlayWrong();
+
         }
     }
+
+
 
     private void SpawnAnimalSoal(int count, Transform parent, GameObject prefab) //soal
     {
@@ -117,4 +132,37 @@ public class EasyLevelManager : MonoBehaviour
             Destroy(child.gameObject);
         }
     }
+
+
+    public void TombolNextSoal(bool jawabanBenar)
+    {
+        var state = GameStateManager.Instance;
+        string key = state.GetProgressKey();
+        int levelIndex = state.currentLevelIndex;
+
+        var progress = SaveLoadSystem.LoadProgress();
+
+        if (!progress.levelProgressDict.ContainsKey(key))
+        {
+            var lp = new LevelProgress();
+            for (int i = 0; i < 10; i++) lp.levels.Add(new LevelEntry());
+            progress.levelProgressDict[key] = lp;
+        }
+
+        while (progress.levelProgressDict[key].levels.Count <= levelIndex)
+        {
+            progress.levelProgressDict[key].levels.Add(new LevelEntry());
+        }
+
+        var current = progress.levelProgressDict[key].levels[levelIndex];
+        current.isCompleted = true;
+        current.isCorrect = jawabanBenar;
+
+        SaveLoadSystem.SaveProgress(progress);
+
+        Debug.Log($"[TombolNextSoal] Saved for {key} | index {levelIndex} | benar: {jawabanBenar}");
+    }
+
+
+
 }

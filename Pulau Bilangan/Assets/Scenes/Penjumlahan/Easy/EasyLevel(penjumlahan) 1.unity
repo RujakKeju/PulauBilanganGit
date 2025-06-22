@@ -1251,125 +1251,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5872352559749688690, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
   m_PrefabInstance: {fileID: 7973071503719578181}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &965980718
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 965980720}
-  - component: {fileID: 965980719}
-  - component: {fileID: 965980721}
-  - component: {fileID: 965980722}
-  - component: {fileID: 965980723}
-  m_Layer: 0
-  m_Name: EasyLevelManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &965980719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965980718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9f10d56a7a11e545921f2cf5f30a06d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelData: {fileID: 11400000, guid: 372903fd3a70ebf4fb2ad1fedb0cc3e1, type: 2}
-  spawnAreaBilangan1: {fileID: 1431539793}
-  spawnAreaBilangan2: {fileID: 1659017419}
-  jawabanText: {fileID: 2067753557}
-  operasiText: {fileID: 352007173}
-  difficultyText: {fileID: 105610597}
-  answerButtons:
-  - {fileID: 1515924847}
-  - {fileID: 210354399}
-  - {fileID: 1305610300}
-  panelBenar: {fileID: 894172851}
-  panelSalah: {fileID: 512753963}
---- !u!4 &965980720
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965980718}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 410, y: 230, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &965980721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965980718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d83e03cfcdfeec47994c64bc3d2f0b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  overlayPanel: {fileID: 457922556}
-  boardPanel: {fileID: 816155258}
-  helpText: {fileID: 1922299955}
-  buttonHelp: {fileID: 1424646251}
-  buttonClose: {fileID: 1913806754}
-  buttonSound: {fileID: 1994134090}
-  audioSource: {fileID: 503914275}
-  helpContent: PILIH JAWABAN YANG BENAR
-  voiceClip: {fileID: 8300000, guid: ac50e9f750a6a58498a731262db89766, type: 3}
---- !u!114 &965980722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965980718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f728a3226dce034a926be0b9de3f1b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panel_key: {fileID: 1659964443}
-  panelSempoa: {fileID: 1576414717}
-  ikanPrefab: {fileID: 587111316821038634, guid: e63b828a4dc7546408e9ed8fd6feca78, type: 3}
-  gridArea: {fileID: 889360326}
-  countText: {fileID: 1449721072}
-  buttonKunci: {fileID: 306071148}
-  buttonClose: {fileID: 1097507610}
-  maxIkan: 50
---- !u!114 &965980723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965980718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22a542cc88c48ee4d8b12a007f47c9df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  overlayPanel: {fileID: 1157962859}
-  boardPanel: {fileID: 1725772158}
-  buttonPause: {fileID: 258961241}
-  buttonClose: {fileID: 1311608125}
-  buttonLanjut: {fileID: 2071764631}
-  buttonSetting: {fileID: 96133284}
-  buttonMainMenu: {fileID: 1834585457}
 --- !u!114 &1097507610 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4401092408461175778, guid: 651e15c322539d740bd204739570e9b0, type: 3}
@@ -2751,6 +2632,102 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135910404}
   m_CullTransparentMesh: 1
+--- !u!82 &295216640538182341
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8857089909584975428}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &519531038827079825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3042,6 +3019,77 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5e65801768657b42b483f5fdbc41c62, type: 3}
+--- !u!114 &2618131540820191414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8857089909584975428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f728a3226dce034a926be0b9de3f1b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel_key: {fileID: 1659964443}
+  panelSempoa: {fileID: 1576414717}
+  ikanPrefab: {fileID: 587111316821038634, guid: e63b828a4dc7546408e9ed8fd6feca78, type: 3}
+  gridArea: {fileID: 889360326}
+  countText: {fileID: 1449721072}
+  buttonKunci: {fileID: 306071148}
+  buttonClose: {fileID: 1097507610}
+  maxIkan: 50
+  audioSource: {fileID: 0}
+  panelSound: {fileID: 8300000, guid: 0b984781c99715a4e94bff096f77f0d7, type: 3}
+--- !u!114 &2782520611601094281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8857089909584975428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d83e03cfcdfeec47994c64bc3d2f0b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overlayPanel: {fileID: 457922556}
+  boardPanel: {fileID: 816155258}
+  helpText: {fileID: 1922299955}
+  buttonHelp: {fileID: 1424646251}
+  buttonClose: {fileID: 1913806754}
+  buttonSound: {fileID: 1994134090}
+  audioSource: {fileID: 503914275}
+  helpContent: PILIH JAWABAN YANG BENAR
+  voiceClip: {fileID: 8300000, guid: ac50e9f750a6a58498a731262db89766, type: 3}
+  panelSound: {fileID: 8300000, guid: 0b984781c99715a4e94bff096f77f0d7, type: 3}
+--- !u!114 &3605098603288930742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8857089909584975428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9f10d56a7a11e545921f2cf5f30a06d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelData: {fileID: 11400000, guid: 372903fd3a70ebf4fb2ad1fedb0cc3e1, type: 2}
+  spawnAreaBilangan1: {fileID: 1431539793}
+  spawnAreaBilangan2: {fileID: 1659017419}
+  jawabanText: {fileID: 2067753557}
+  operasiText: {fileID: 352007173}
+  difficultyText: {fileID: 105610597}
+  answerButtons:
+  - {fileID: 1515924847}
+  - {fileID: 210354399}
+  - {fileID: 1305610300}
+  panelBenar: {fileID: 894172851}
+  panelSalah: {fileID: 512753963}
+  audioSource: {fileID: 0}
+  panelBenarSound: {fileID: 8300000, guid: a56601c5bcd798f4ab140ab07a812fac, type: 3}
+  panelSalahSound: {fileID: 8300000, guid: cfa340c5ba8890c45b1f2efe7fa356bf, type: 3}
 --- !u!1001 &4227464515863372885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3050,6 +3098,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 543883346}
     m_Modifications:
+    - target: {fileID: 1266024957886772740, guid: d002d2dcd92031e40bed1e7ed36ab0fa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 3605098603288930742}
     - target: {fileID: 1535873686007569154, guid: d002d2dcd92031e40bed1e7ed36ab0fa, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3240,6 +3292,25 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 821872f73427f704d95de27316460fcb, type: 3}
+--- !u!114 &5736401179360140558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8857089909584975428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a542cc88c48ee4d8b12a007f47c9df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overlayPanel: {fileID: 1157962859}
+  boardPanel: {fileID: 1725772158}
+  buttonPause: {fileID: 258961241}
+  buttonClose: {fileID: 1311608125}
+  buttonLanjut: {fileID: 2071764631}
+  buttonSetting: {fileID: 96133284}
+  buttonMainMenu: {fileID: 1834585457}
 --- !u!1001 &6449796671476101993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3342,6 +3413,21 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ceec62e235e9344aa508a6706442341, type: 3}
+--- !u!4 &6909335043097785265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8857089909584975428}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 410, y: 230, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7221277480657346466
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3461,7 +3547,7 @@ PrefabInstance:
     - target: {fileID: 6598032725203708619, guid: 651e15c322539d740bd204739570e9b0, type: 3}
       propertyPath: controller
       value: 
-      objectReference: {fileID: 965980722}
+      objectReference: {fileID: 2618131540820191414}
     - target: {fileID: 7798600846111857361, guid: 651e15c322539d740bd204739570e9b0, type: 3}
       propertyPath: m_Name
       value: Panel_Key
@@ -3512,33 +3598,9 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1771173562567604545, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1771173562567604545, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1771173562567604545, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 7973071503719578182}
-    - target: {fileID: 1771173562567604545, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1771173562567604545, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnNextLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 1771173562567604545, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PanelBenarController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1771173562567604545, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3605098603288930742}
     - target: {fileID: 1944592284015435749, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3747,6 +3809,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a163c566c30bb724092c074681006276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &8857089909584975428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6909335043097785265}
+  - component: {fileID: 3605098603288930742}
+  - component: {fileID: 2782520611601094281}
+  - component: {fileID: 2618131540820191414}
+  - component: {fileID: 5736401179360140558}
+  - component: {fileID: 295216640538182341}
+  m_Layer: 0
+  m_Name: EasyLevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3755,5 +3838,5 @@ SceneRoots:
   - {fileID: 103146496}
   - {fileID: 543883346}
   - {fileID: 1396008635}
-  - {fileID: 965980720}
+  - {fileID: 6909335043097785265}
   - {fileID: 503914276}

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e147cb0c82a63a4690720fa3ec21d81, type: 3}
+  m_Name: Pembagian-Easy-leveList
+  m_EditorClassIdentifier: 
+  difficulty: 0
+  sceneNames:
+  - EasyLevel(pembagian) 1
+  - EasyLevel(pembagian) 2
+  - EasyLevel(pembagian) 3
+  - EasyLevel(pembagian) 4
+  - EasyLevel(pembagian) 5
+  - EasyLevel(pembagian) 6
+  - EasyLevel(pembagian) 7
+  - EasyLevel(pembagian) 8
+  - EasyLevel(pembagian) 9
+  - EasyLevel(pembagian) 10

@@ -18,6 +18,9 @@ public class NameInputManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI accountNameText;   // Teks untuk nama pemain di panel akun
     [SerializeField] private Image accountCharacterImage;       // Gambar karakter di panel "Akun"
 
+    public Image fillBar;
+    public TMP_Text percentText;
+
     void Start()
     {
         UpdateSelectedCharacterImage();
@@ -43,6 +46,13 @@ public class NameInputManager : MonoBehaviour
         if (!string.IsNullOrEmpty(playerName))
         {
             PlayerPrefs.SetString("PlayerName", playerName);
+
+            // SIMPAN ke PlayerProgress
+            var progress = SaveLoadSystem.LoadProgress();
+            progress.playerName = playerName;
+            progress.characterName = CharacterSelectionManager.SelectedCharacterData.characterName;
+            SaveLoadSystem.SaveProgress(progress);
+
             ShowAccountPanel();
         }
         else
@@ -54,20 +64,56 @@ public class NameInputManager : MonoBehaviour
     private void ShowAccountPanel()
     {
         accountPanel.SetActive(true);
-        accountNameText.text = PlayerPrefs.GetString("PlayerName", "No Name");
-        // Gunakan data yang telah disimpan di CharacterSelectionManager untuk menampilkan sprite
-        if (CharacterSelectionManager.SelectedCharacterData != null)
+        var progress = SaveLoadSystem.LoadProgress();
+
+        accountNameText.text = progress.playerName;
+
+        // Karakter
+        var charSO = Resources.Load<CharacterDataSO>("Characters/" + progress.characterName);
+        if (charSO != null)
         {
-            accountCharacterImage.sprite = CharacterSelectionManager.SelectedCharacterData.characterSprite;
+            accountCharacterImage.sprite = charSO.characterSprite;
         }
-        else
+
+        // Hitung persentase progres
+        float totalBenar = 0;
+        float totalSoal = 0;
+
+        foreach (var entry in progress.levelProgressDict.Values)
         {
-            Debug.LogError("SelectedCharacterData is null!");
+            foreach (var level in entry.levels)
+            {
+                if (level.isCompleted)
+                {
+                    totalSoal++;
+                    if (level.isCorrect) totalBenar++;
+                }
+            }
         }
+
+        float persen = (totalSoal > 0) ? (totalBenar / totalSoal) * 100f : 0f;
+
+        fillBar.fillAmount = persen / 100f;
+        percentText.text = Mathf.RoundToInt(persen) + "%";
+
+        Debug.Log($"[Akun] Progres total: {persen}%");
+
+        // TODO: tampilkan di UI piala
     }
+
 
     public void OnClickLanjut()
     {
-        SceneManager.LoadScene("OperationMenu"); // Pastikan nama scene sesuai
+        if (SceneTransitioner.Instance != null)
+        {
+            SceneTransitioner.Instance.LoadSceneWithTransition("OperationMenu");
+        }
+        else
+        {
+            Debug.LogWarning("SceneTransitionUI belum ada di scene ini!");
+            SceneManager.LoadScene("OperationMenu"); // fallback
+        }
     }
+
+
 }

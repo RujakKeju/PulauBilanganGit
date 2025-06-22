@@ -573,6 +573,7 @@ MonoBehaviour:
   bintang2: {fileID: 3752711587826768156}
   bintang3: {fileID: 2211971587041237857}
   textBenar: {fileID: 7539079606698109049}
+  easyLevelManager: {fileID: 0}
   btnMainMenu: {fileID: 1159156253282580734}
   btnReplay: {fileID: 4497218879084106159}
   btnNext: {fileID: 1771173562567604545}

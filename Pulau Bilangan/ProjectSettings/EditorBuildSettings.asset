@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/others/OperationMenu.unity
     guid: 712b4a9b0bfcfb149bc474f5e26f1f11
   - enabled: 1
+    path: Assets/Scenes/FinishPoin.unity
+    guid: 4b366e3ba009c624cb1ca9583315fb12
+  - enabled: 1
     path: Assets/Scenes/Pengurangan/Medium/MediumLevel(pengurangan) 1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
@@ -39,15 +42,354 @@ EditorBuildSettings:
     path: Assets/Scenes/Penjumlahan/Easy/EasyLevel(penjumlahan) 2.unity
     guid: 10c7cf69fc9d3634fbea58d29c5479b6
   - enabled: 1
-    path: Assets/Scenes/Penjumlahan/Medium/MediumLevel(penjumlahan) 1.unity
-    guid: c2758ff40eaeea64396f1b97cf87a940
+    path: Assets/Scenes/Penjumlahan/Easy/EasyLevel(penjumlahan) 3.unity
+    guid: e433ef47af2bddd4099b6d0f0f897d0f
   - enabled: 1
-    path: Assets/Scenes/Penjumlahan/Medium/MediumLevel(penjumlahan) 2.unity
-    guid: 2d34481acd995f74f9b990f047fd4a29
+    path: Assets/Scenes/Penjumlahan/Easy/EasyLevel(penjumlahan) 4.unity
+    guid: fa96dbe0c35559a47bafd9ee1a3d608a
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Easy/EasyLevel(penjumlahan) 5.unity
+    guid: 90e90fc42915d8843812a5eb5c816c16
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Easy/EasyLevel(penjumlahan) 6.unity
+    guid: e59a88ce8452cf84686aee7a821b52af
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Easy/EasyLevel(penjumlahan) 7.unity
+    guid: 3cafb9298bb7d5b49af2057f76b0128f
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Easy/EasyLevel(penjumlahan) 8.unity
+    guid: e6e09dc04984c004b82c950cd4507393
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Easy/EasyLevel(penjumlahan) 9.unity
+    guid: ac64267b03687e04d9be5afde965df64
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Easy/EasyLevel(penjumlahan) 10.unity
+    guid: cf85ae319927ebe48b78daa4640da326
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Hard/HardLevel(penjumlahan) 1.unity
+    guid: 7de2b4a3b4e62bc499e3481bbac393d7
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Hard/HardLevel(penjumlahan) 2.unity
+    guid: 436aae185ffa38147ade5af732fbc849
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Hard/HardLevel(penjumlahan) 3.unity
+    guid: 833244aad0e54d0429f598eea795e604
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Hard/HardLevel(penjumlahan) 4.unity
+    guid: fb86e3bd66b8c0e4a9f4f19df2378c68
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Hard/HardLevel(penjumlahan) 5.unity
+    guid: 6035c5a8402d5a642acd196b9f649a16
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Hard/HardLevel(penjumlahan) 6.unity
+    guid: 77338e9f787f3884dbcb656dbbcb8fc0
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Hard/HardLevel(penjumlahan) 7.unity
+    guid: c4f1101905009f747a17c49f275310e9
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Hard/HardLevel(penjumlahan) 8.unity
+    guid: f6f3a1d46eb2ded4080ce71eab52070d
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Hard/HardLevel(penjumlahan) 9.unity
+    guid: c5cc5a9f2d628ca4cbe1a82d71ba2132
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Hard/HardLevel(penjumlahan) 10.unity
+    guid: e0b0f1202ec57154fb4b9ad00345e6e4
   - enabled: 1
     path: Assets/Scenes/Pengurangan/Easy/EasyLevel(pengurangan) 1.unity
     guid: 805cddfa2e9287f4aabf1aa80c8501d4
   - enabled: 1
-    path: Assets/Scenes/Penjumlahan/Easy/EasyLevel(penjumlahan) 3.unity
-    guid: e433ef47af2bddd4099b6d0f0f897d0f
+    path: Assets/Scenes/Penjumlahan/Medium/MediumLevel(penjumlahan) 2.unity
+    guid: 2d34481acd995f74f9b990f047fd4a29
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Medium/MediumLevel(penjumlahan) 1.unity
+    guid: c2758ff40eaeea64396f1b97cf87a940
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Medium/MediumLevel(penjumlahan) 3.unity
+    guid: 106beff3299db3046a00ae57e378a5c1
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Medium/MediumLevel(penjumlahan) 4.unity
+    guid: 47ce05d80c69c734ab134ae9c1e2614d
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Medium/MediumLevel(penjumlahan) 5.unity
+    guid: c2a31ee95e39f124ca8ca912bb49ffc9
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Medium/MediumLevel(penjumlahan) 6.unity
+    guid: 27719923849a67a4bbe12e16e47dca5c
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Medium/MediumLevel(penjumlahan) 7.unity
+    guid: f3f5c0119601a3846bce75a5ccad6df2
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Medium/MediumLevel(penjumlahan) 8.unity
+    guid: 1a24fc283cea12949a5a0bab30079724
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Medium/MediumLevel(penjumlahan) 9.unity
+    guid: cfc50fe1c130efd44a8ea82ae181bb6f
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Medium/MediumLevel(penjumlahan) 10.unity
+    guid: 5de63d7a7a4fb4443adf30f488e269e8
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Easy/EasyLevel(pengurangan) 2.unity
+    guid: 4070893a8a25eb44f87632047a1b64bf
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Easy/EasyLevel(pengurangan) 3.unity
+    guid: 8663523f144e9f24fa3f37180dfe8d7c
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Easy/EasyLevel(pengurangan) 4.unity
+    guid: d69af8b1d60f8e9468eea73f3c9ac67f
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Easy/EasyLevel(pengurangan) 5.unity
+    guid: 68cb63d674b8d544d9d6a2f8c637f165
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Easy/EasyLevel(pengurangan) 6.unity
+    guid: 46fd0bcb524ed2d49984dc25b8bb8496
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Easy/EasyLevel(pengurangan) 7.unity
+    guid: 023bbe25519d0ab4dbbc19b145d8703b
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Easy/EasyLevel(pengurangan) 8.unity
+    guid: 669584dee8fcc8f4bab569c7645b44dc
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Easy/EasyLevel(pengurangan) 9.unity
+    guid: d0fef101ebae84c448c6298b84d30205
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Easy/EasyLevel(pengurangan) 10.unity
+    guid: b7d74595e7de39646a2d683a06b06f08
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Hard/HardLevel(Pengurangan) 1.unity
+    guid: 64a82994a49ab1a4399fefe6eccd0b8a
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Hard/HardLevel(Pengurangan) 2.unity
+    guid: 687c3c39b03859d4a928ce1030198abc
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Hard/HardLevel(Pengurangan) 3.unity
+    guid: 4c02cad1cb3f8334787b110be357730e
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Hard/HardLevel(Pengurangan) 4.unity
+    guid: ecfe0451f3b06354597f5de5e8f99eae
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Hard/HardLevel(Pengurangan) 5.unity
+    guid: c09ed701d15acfa4faa65178dd0ddb9d
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Hard/HardLevel(Pengurangan) 6.unity
+    guid: 38ae15db93bd35d4db49e8e86619cdae
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Hard/HardLevel(Pengurangan) 7.unity
+    guid: 6d8a241627b91714cbe258df421f6269
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Hard/HardLevel(Pengurangan) 8.unity
+    guid: 773db6229af3fe64fbef43ded0aaba8b
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Hard/HardLevel(Pengurangan) 9.unity
+    guid: 6120fb31595c36348ba2727fa3c86bc7
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Hard/HardLevel(Pengurangan) 10.unity
+    guid: 5441f62f731f3b241bc1742712ea022f
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Medium/MediumLevel(pengurangan) 2.unity
+    guid: 194784099f4937a4997445560a97d186
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Medium/MediumLevel(pengurangan) 3.unity
+    guid: a579605e6e0b2a0408db86484aaa2976
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Medium/MediumLevel(pengurangan) 4.unity
+    guid: 72974fd6d36433e4d8a8bb0c66356865
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Medium/MediumLevel(pengurangan) 5.unity
+    guid: 7ae255b48dfa2e942a10296ed940a70b
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Medium/MediumLevel(pengurangan) 6.unity
+    guid: 0e99dbd53b6ef8c479a560807e37d79c
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Medium/MediumLevel(pengurangan) 7.unity
+    guid: a8e58eb4a6cf43e4f898f2d33acf689c
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Medium/MediumLevel(pengurangan) 8.unity
+    guid: 4297e6573eb6040469e33e54b6424357
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Medium/MediumLevel(pengurangan) 9.unity
+    guid: 920bd589e3fd5694095354caa15faee2
+  - enabled: 1
+    path: Assets/Scenes/Pengurangan/Medium/MediumLevel(pengurangan) 10.unity
+    guid: 24fb5a431f72a33478afe0ea3a2f553c
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Easy/EasyLevel(perkalian) 1.unity
+    guid: 3ac90b4614ab99e44a4588a88e8d5005
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Easy/EasyLevel(perkalian) 2.unity
+    guid: f643225bd76f12d4e877839b60d1efe5
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Easy/EasyLevel(perkalian) 3.unity
+    guid: 31fde88e3009e3148a1b95f24bd60e9a
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Easy/EasyLevel(perkalian) 4.unity
+    guid: be125c3c4c5a7034c90cc3c9dfed105d
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Easy/EasyLevel(perkalian) 5.unity
+    guid: 821e0a6596a7ff8419740b761ea4d601
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Easy/EasyLevel(perkalian) 6.unity
+    guid: 99a1717715157a3428ecc101dff517ca
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Easy/EasyLevel(perkalian) 7.unity
+    guid: c16394661f9d1e349bc9c59cd13e01ec
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Easy/EasyLevel(perkalian) 8.unity
+    guid: 5c20841aa0969784e95dd4946df49778
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Easy/EasyLevel(perkalian) 9.unity
+    guid: 1e8bfefd8961e324996be1ed7db31b7f
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Easy/EasyLevel(perkalian) 10.unity
+    guid: 0ed4965c40488d54ea3a0286c50b2704
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Medium/MediumLevel(perkalian) 1.unity
+    guid: 6b14245bec6f0954aa84e61814dcc70c
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Medium/MediumLevel(perkalian) 2.unity
+    guid: 4a0bc3e3347438c4085bbf6834b643da
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Medium/MediumLevel(perkalian) 3.unity
+    guid: 0d06650ac6005cf41a5772ef5568b645
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Medium/MediumLevel(perkalian) 4.unity
+    guid: d6bcf63f43d44e247addb9dce2a51473
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Medium/MediumLevel(perkalian) 5.unity
+    guid: b0e87025616b93f4e968ae88c63540da
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Medium/MediumLevel(perkalian) 6.unity
+    guid: dc05a79be0af6824fbee2b02a4e0ac29
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Medium/MediumLevel(perkalian) 7.unity
+    guid: 1072472e60d79e146bec722e4fbde59b
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Medium/MediumLevel(perkalian) 8.unity
+    guid: 5bc685a8267da71449d881821de42795
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Medium/MediumLevel(perkalian) 9.unity
+    guid: 6b6712ac70b93794a81993f36b492e04
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Medium/MediumLevel(perkalian) 10.unity
+    guid: 11a9d0fe22022204fb3fa3e3721f2a4c
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Hard/HardLevel(perkalian) 1.unity
+    guid: e8e9ec99a5f451c459a8ea92b94159d4
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Hard/HardLevel(perkalian) 2.unity
+    guid: b1ee96d0e1529444abad8128a7d335e2
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Hard/HardLevel(perkalian) 3.unity
+    guid: 08bfe08cf1ab2ec4a87afb7505b0f629
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Hard/HardLevel(perkalian) 4.unity
+    guid: bb5d4faa89efc684e802704d381c1a13
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Hard/HardLevel(perkalian) 5.unity
+    guid: 43e48dd66abc590468f5d926c81a2d0f
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Hard/HardLevel(perkalian) 6.unity
+    guid: ced86fba95dd1424faa787e7c0c18f56
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Hard/HardLevel(perkalian) 7.unity
+    guid: 303b95d2c9eafa745b930eb35b25e4c3
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Hard/HardLevel(perkalian) 8.unity
+    guid: e53d2128c27aa804188c3a3f2e1ea286
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Hard/HardLevel(perkalian) 9.unity
+    guid: 191bdd3d39f710f40ba010324411ec8d
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Hard/HardLevel(perkalian) 10.unity
+    guid: e1c51307268613e42978417a5a9d60ce
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Easy/EasyLevel(pembagian) 1.unity
+    guid: 9693a8db5b320944685813b956edd45d
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Easy/EasyLevel(pembagian) 2.unity
+    guid: 1c6573ed180c9264cb47f54beabd25fd
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Easy/EasyLevel(pembagian) 3.unity
+    guid: 275e8806c1593574cb0f41fd8a23024f
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Easy/EasyLevel(pembagian) 4.unity
+    guid: dc07b314812097e4e8b87a6e6e9ad3d7
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Easy/EasyLevel(pembagian) 5.unity
+    guid: 8b6729adff5939a41a1a613df004589a
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Easy/EasyLevel(pembagian) 6.unity
+    guid: 410436e455973614f8abe66150327e67
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Easy/EasyLevel(pembagian) 7.unity
+    guid: dce72da54bd392d4eba759409e5c056c
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Easy/EasyLevel(pembagian) 8.unity
+    guid: c7431d96ffbaa694f8630e0d053e68cf
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Easy/EasyLevel(pembagian) 9.unity
+    guid: cac25f282ff950e4bb40e42b39a9ab7a
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Easy/EasyLevel(pembagian) 10.unity
+    guid: addfc10fed0bf1748af1361b9058264d
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Hard/HardLevel(Pembagian) 1.unity
+    guid: 4eaada751f09e8442a4b55621181f1a7
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Hard/HardLevel(Pembagian) 2.unity
+    guid: ceda8ce995786c14eb421f16ef79a63b
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Hard/HardLevel(Pembagian) 3.unity
+    guid: 69f5fc96a0164f944972228ca3c379b3
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Hard/HardLevel(Pembagian) 4.unity
+    guid: eb73c989b7050624a87597cdb45468e8
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Hard/HardLevel(Pembagian) 5.unity
+    guid: 6c7dc156a30e622499b0af3d1d2aa852
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Hard/HardLevel(Pembagian) 6.unity
+    guid: 257e5b90ad4d42746b106c9b27685cd0
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Hard/HardLevel(Pembagian) 7.unity
+    guid: a1253c0e86280f84a83cc6a2207b0ec0
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Hard/HardLevel(Pembagian) 8.unity
+    guid: 1a5c573ef6a6b7a4883decada73eb539
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Hard/HardLevel(Pembagian) 9.unity
+    guid: 639bdb87cb64e5944b10bc5de8ddcbcd
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Hard/HardLevel(Pembagian) 10.unity
+    guid: f1d4c4466e15cce4fad291df5d584730
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Medium/MediumLevel(pembagian) 1.unity
+    guid: 92c595ca6d83c3a4a8e1445f434e6ea5
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Medium/MediumLevel(pembagian) 2.unity
+    guid: 51597febb1fcbd540861e6a417837f40
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Medium/MediumLevel(pembagian) 3.unity
+    guid: 007d5f9e73da14b40a8fe85e0333ec09
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Medium/MediumLevel(pembagian) 4.unity
+    guid: ce40cf71fcc270d4788ed33cc347765a
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Medium/MediumLevel(pembagian) 5.unity
+    guid: 0fa82e4121f26b04da091aa98fddaf50
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Medium/MediumLevel(pembagian) 6.unity
+    guid: b0c34c083e09fae4bbf720ef65a11b6f
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Medium/MediumLevel(pembagian) 7.unity
+    guid: 2834da4d7c3709141841ff88327750c8
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Medium/MediumLevel(pembagian) 8.unity
+    guid: cf02b4e72945bab49a2d91fe9a884a7d
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Medium/MediumLevel(pembagian) 9.unity
+    guid: 8f58187a0d094bd43b4a08294154af59
+  - enabled: 1
+    path: Assets/Scenes/Pembagian/Medium/MediumLevel(pembagian) 10.unity
+    guid: 8c1749ce658f4b84ba5ffbc36cafde5c
   m_configObjects: {}

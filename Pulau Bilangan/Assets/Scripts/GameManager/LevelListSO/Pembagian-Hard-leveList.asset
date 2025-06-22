@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e147cb0c82a63a4690720fa3ec21d81, type: 3}
-  m_Name: Penjumlahan-Medium-levelList
+  m_Name: Pembagian-Hard-leveList
   m_EditorClassIdentifier: 
-  difficulty: 1
+  difficulty: 2
   sceneNames:
-  - MediumLevel(penjumlahan) 1
-  - MediumLevel(penjumlahan) 2
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - HardLevel(pembagian) 1
+  - HardLevel(pembagian) 2
+  - HardLevel(pembagian) 3
+  - HardLevel(pembagian) 4
+  - HardLevel(pembagian) 5
+  - HardLevel(pembagian) 6
+  - HardLevel(pembagian) 7
+  - HardLevel(pembagian) 8
+  - HardLevel(pembagian) 9
+  - HardLevel(pembagian) 10

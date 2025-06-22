@@ -15,6 +15,10 @@ public class SempoaController : MonoBehaviour
     public int maxIkan = 30;
 
 
+    public AudioSource audioSource;
+    public AudioClip panelSound;
+
+
     private RectTransform sempoaRect;
     private Vector2 offscreenPos;
     private Vector2 onscreenPos;
@@ -25,6 +29,8 @@ public class SempoaController : MonoBehaviour
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
         panel_key.SetActive(false);
         panelSempoa.SetActive(false);
 
@@ -39,6 +45,9 @@ public class SempoaController : MonoBehaviour
         {
             panel_key.SetActive(true);
             panelSempoa.SetActive(true);
+
+            if (audioSource != null && panelSound != null)
+                audioSource.PlayOneShot(panelSound);
 
             // Transisi dari atas ke tengah
             LeanTween.move(sempoaRect, onscreenPos, 0.5f).setEaseOutBack();
@@ -59,6 +68,9 @@ public class SempoaController : MonoBehaviour
 
     void CloseSempoa()
     {
+        if (audioSource != null && panelSound != null)
+            audioSource.PlayOneShot(panelSound);
+
         // Transisi keluar ke atas, lalu matikan panel
         LeanTween.move(sempoaRect, offscreenPos, 0.5f).setEaseInBack().setOnComplete(() =>
         {
