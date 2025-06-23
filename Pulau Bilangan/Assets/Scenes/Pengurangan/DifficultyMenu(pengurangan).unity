@@ -730,6 +730,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373845431}
   m_CullTransparentMesh: 1
+--- !u!1 &402610212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 402610214}
+  - component: {fileID: 402610213}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &402610213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402610212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8888e74ed273a439f043f0e436b6ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedOperation: 0
+  selectedDifficulty: 0
+  currentLevelIndex: 0
+--- !u!4 &402610214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402610212}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.12637451, y: -3.429807, z: -0.020878669}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &409710001
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,7 +1147,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 957279091}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1dbd06b8ce593646aa7bbd9c9f2a367, type: 3}
+  m_Script: {fileID: 11500000, guid: 74e2a77c05b944544a8fff4191fe5829, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &959051634
@@ -1398,7 +1445,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 957279094}
-        m_TargetAssemblyTypeName: DifficultyMenuController_Perkalian, Assembly-CSharp
+        m_TargetAssemblyTypeName: DifficultyMenuController_Pengurangan, Assembly-CSharp
         m_MethodName: SelectDifficulty
         m_Mode: 3
         m_Arguments:
@@ -1531,7 +1578,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 957279094}
-        m_TargetAssemblyTypeName: DifficultyMenuController_Perkalian, Assembly-CSharp
+        m_TargetAssemblyTypeName: DifficultyMenuController_Pengurangan, Assembly-CSharp
         m_MethodName: SelectDifficulty
         m_Mode: 3
         m_Arguments:
@@ -2084,7 +2131,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 957279094}
-        m_TargetAssemblyTypeName: DifficultyMenuController_Perkalian, Assembly-CSharp
+        m_TargetAssemblyTypeName: DifficultyMenuController_Pengurangan, Assembly-CSharp
         m_MethodName: SelectDifficulty
         m_Mode: 3
         m_Arguments:
@@ -2372,3 +2419,4 @@ SceneRoots:
   - {fileID: 1653505213}
   - {fileID: 349519487}
   - {fileID: 957279093}
+  - {fileID: 402610214}

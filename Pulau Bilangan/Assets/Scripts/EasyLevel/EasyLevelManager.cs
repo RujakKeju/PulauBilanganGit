@@ -56,8 +56,10 @@ public class EasyLevelManager : MonoBehaviour
 
         while (answerOptions.Count < 3)
         {
-            int randomWrongAnswer = Random.Range(levelData.jawaban - 3, levelData.jawaban + 3);
-            if (randomWrongAnswer != levelData.jawaban && !answerOptions.Contains(randomWrongAnswer))
+            int randomWrongAnswer = Random.Range(levelData.jawaban - 3, levelData.jawaban + 4); // +4 karena upper bound eksklusif
+
+            // Tambahan: Pastikan jawaban salah > 0 dan bukan jawaban yang benar, dan belum ada di daftar
+            if (randomWrongAnswer > 0 && randomWrongAnswer != levelData.jawaban && !answerOptions.Contains(randomWrongAnswer))
             {
                 answerOptions.Add(randomWrongAnswer);
             }

@@ -7,7 +7,16 @@ public class LevelListProvider : MonoBehaviour
     public LevelListSO additionEasy;
     public LevelListSO additionMedium;
     public LevelListSO additionHard;
-    // dst untuk pengurangan, perkalian, pembagian...
+    public LevelListSO subtractionEasy;
+    public LevelListSO subtractionMedium;
+    public LevelListSO subtractionHard;
+    public LevelListSO multiplicationEasy;
+    public LevelListSO multiplicationMedium;
+    public LevelListSO multiplicationHard;
+    public LevelListSO divisionEasy;
+    public LevelListSO divisionMedium;
+    public LevelListSO divisionHard;
+    
 
     void Awake()
     {
@@ -26,7 +35,17 @@ public class LevelListProvider : MonoBehaviour
             (MathOperation.Addition, Difficulty.Easy) => additionEasy,
             (MathOperation.Addition, Difficulty.Medium) => additionMedium,
             (MathOperation.Addition, Difficulty.Hard) => additionHard,
-            // Tambahkan lainnya...
+            (MathOperation.Subtraction, Difficulty.Easy) => subtractionEasy,
+            (MathOperation.Subtraction, Difficulty.Medium) => subtractionMedium,
+            (MathOperation.Subtraction, Difficulty.Hard) => subtractionHard,
+            (MathOperation.Multiplication, Difficulty.Easy) => multiplicationEasy,
+            (MathOperation.Multiplication, Difficulty.Medium) => multiplicationMedium,
+            (MathOperation.Multiplication, Difficulty.Hard) => multiplicationHard,
+            (MathOperation.Division, Difficulty.Easy) => divisionEasy,
+            (MathOperation.Division, Difficulty.Medium) => divisionMedium,
+            (MathOperation.Division, Difficulty.Hard) => divisionHard,
+
+
             _ => null
         };
     }
