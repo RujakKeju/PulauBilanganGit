@@ -38,7 +38,7 @@ public class NameInputManager : MonoBehaviour
         }
         else
         {
-            characterPanel.SetActive(true);
+            characterPanel.SetActive(false);
             namePanel.SetActive(false);
             cekAkunPanel.SetActive(false);
         }
