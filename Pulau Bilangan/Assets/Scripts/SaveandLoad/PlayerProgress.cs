@@ -6,6 +6,8 @@ public class PlayerProgress
 {
     public string playerName;
     public string characterName;
+    public CharacterDataSO characterData;
+
 
     // Ganti dictionary dengan list serializable
     public List<LevelProgressEntry> levelProgressList = new();

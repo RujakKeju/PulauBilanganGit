@@ -1,119 +1,150 @@
 using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-
-
+using TMPro;
+using System.Collections.Generic;
 
 public class NameInputManager : MonoBehaviour
 {
-    public static NameInputManager Instance { get; private set; }
+    [Header("UI Panels")]
+    public GameObject characterPanel;
+    public GameObject namePanel;
+    public GameObject cekAkunPanel;
+    public GameObject confirmDeletePanel;
 
+    [Header("Input & Display")]
+    public TMP_InputField nameInput;
+    public TextMeshProUGUI displayNameText;
+    public Image characterImage;
+    public Image pialaFill;
+    public TextMeshProUGUI percentageText;
 
-    [SerializeField] private TMP_InputField nameInputField; // Field untuk input nama
-    [SerializeField] private GameObject nameInputPanel;       // Panel input nama
-    [SerializeField] private Image selectedCharacterImage;    // Image di panel input nama untuk menampilkan karakter yang dipilih
-
-    [SerializeField] private GameObject accountPanel;         // Panel "Akun" untuk menampilkan data tersimpan
-    [SerializeField] private TextMeshProUGUI accountNameText;   // Teks untuk nama pemain di panel akun
-    [SerializeField] private Image accountCharacterImage;       // Gambar karakter di panel "Akun"
-
-    public Image fillBar;
-    public TMP_Text percentText;
+    [Header("Buttons")]
+    public Button mainButton;
+    public Button confirmDeleteYesButton;
+    public Button confirmDeleteNoButton;
 
     void Start()
     {
-        UpdateSelectedCharacterImage();
-    }
+        mainButton.onClick.AddListener(OnMainButtonPressed);
+        //confirmDeleteYesButton.onClick.AddListener(DeleteAccount);
+        //confirmDeleteNoButton.onClick.AddListener(() => confirmDeletePanel.SetActive(false));
 
-    // Jika panel input nama ditampilkan secara manual, panggil method ini
-    public void UpdateSelectedCharacterImage()
-    {
-        if (CharacterSelectionManager.SelectedCharacterData != null)
+        var progress = SaveLoadSystem.LoadProgress();
+        if (!string.IsNullOrEmpty(progress.playerName) && progress.characterData != null)
         {
-            selectedCharacterImage.sprite = CharacterSelectionManager.SelectedCharacterData.characterSprite;
-            Debug.Log("Sprite di InputName di-update: " + selectedCharacterImage.sprite.name);
+            characterPanel.SetActive(false);
+            namePanel.SetActive(false);
+            cekAkunPanel.SetActive(true);
         }
         else
         {
-            Debug.LogError("SelectedCharacterData is null! Pastikan karakter sudah dipilih.");
+            characterPanel.SetActive(true);
+            namePanel.SetActive(false);
+            cekAkunPanel.SetActive(false);
         }
+
+        LoadAndDisplayAccountData();
     }
 
-    public void ConfirmName()
+
+    void OnMainButtonPressed()
     {
-        string playerName = nameInputField.text;
-        if (!string.IsNullOrEmpty(playerName))
-        {
-            PlayerPrefs.SetString("PlayerName", playerName);
-
-            // SIMPAN ke PlayerProgress
-            var progress = SaveLoadSystem.LoadProgress();
-            progress.playerName = playerName;
-            progress.characterName = CharacterSelectionManager.SelectedCharacterData.characterName;
-            SaveLoadSystem.SaveProgress(progress);
-
-            ShowAccountPanel();
-        }
-        else
-        {
-            Debug.Log("Nama tidak boleh kosong!");
-        }
-    }
-
-    private void ShowAccountPanel()
-    {
-        accountPanel.SetActive(true);
         var progress = SaveLoadSystem.LoadProgress();
 
-        accountNameText.text = progress.playerName;
-
-        // Karakter
-        var charSO = Resources.Load<CharacterDataSO>("Characters/" + progress.characterName);
-        if (charSO != null)
+        if (!string.IsNullOrEmpty(progress.playerName) && progress.characterData != null)
         {
-            accountCharacterImage.sprite = charSO.characterSprite;
+            characterPanel.SetActive(false);
+            namePanel.SetActive(false);
+            cekAkunPanel.SetActive(true);
         }
-
-        // Hitung persentase progres
-        float totalBenar = 0;
-        float totalSoal = 0;
-
-        foreach (var entry in progress.levelProgressDict.Values)
+        else
         {
-            foreach (var level in entry.levels)
+            characterPanel.SetActive(true);
+            namePanel.SetActive(false);
+            cekAkunPanel.SetActive(false);
+        }
+    }
+
+    public void OnConfirmNameButton()
+    {
+        string inputName = nameInput.text.Trim();
+        if (string.IsNullOrEmpty(inputName)) return;
+
+        // Simpan data
+        var progress = SaveLoadSystem.LoadProgress();
+        progress.playerName = inputName;
+        SaveLoadSystem.SaveProgress(progress);
+
+        // Langsung buka panel cek akun
+        characterPanel.SetActive(false);
+        namePanel.SetActive(false);
+        cekAkunPanel.SetActive(true);
+
+        // Refresh tampilan info akun
+        LoadAndDisplayAccountData();
+    }
+
+
+    void LoadAndDisplayAccountData()
+    {
+        var progress = SaveLoadSystem.LoadProgress();
+
+        if (!string.IsNullOrEmpty(progress.playerName))
+            displayNameText.text = progress.playerName;
+
+        if (progress.characterData != null && progress.characterData.characterSprite != null)
+            characterImage.sprite = progress.characterData.characterSprite;
+
+        float percentage = HitungTotalPersentase(progress);
+        percentageText.text = Mathf.RoundToInt(percentage).ToString() + "%";
+
+        if (pialaFill != null)
+        {
+            pialaFill.fillAmount = percentage / 100f;
+        }
+    }
+
+    float HitungTotalPersentase(PlayerProgress progress)
+    {
+        int totalBenar = 0;
+        int totalSoal = 0;
+
+        foreach (var entry in progress.levelProgressDict)
+        {
+            foreach (var lvl in entry.Value.levels)
             {
-                if (level.isCompleted)
+                if (lvl.isCompleted)
                 {
                     totalSoal++;
-                    if (level.isCorrect) totalBenar++;
+                    if (lvl.isCorrect) totalBenar++;
                 }
             }
         }
 
-        float persen = (totalSoal > 0) ? (totalBenar / totalSoal) * 100f : 0f;
-
-        fillBar.fillAmount = persen / 100f;
-        percentText.text = Mathf.RoundToInt(persen) + "%";
-
-        Debug.Log($"[Akun] Progres total: {persen}%");
-
-        // TODO: tampilkan di UI piala
+        if (totalSoal == 0) return 0f;
+        return (float)totalBenar / totalSoal * 100f;
     }
 
+    public void DeleteAccount()
+    {
+        PlayerProgress newProgress = new PlayerProgress();
+        SaveLoadSystem.SaveProgress(newProgress);
+
+        characterPanel.SetActive(true);
+        namePanel.SetActive(false);
+        cekAkunPanel.SetActive(false);
+        confirmDeletePanel.SetActive(false);
+    }
+
+    // Fungsi tombol hapus akun
+    public void OnDeleteButtonPressed()
+    {
+        confirmDeletePanel.SetActive(true);
+    }
 
     public void OnClickLanjut()
     {
-        if (SceneTransitioner.Instance != null)
-        {
-            SceneTransitioner.Instance.LoadSceneWithTransition("OperationMenu");
-        }
-        else
-        {
-            Debug.LogWarning("SceneTransitionUI belum ada di scene ini!");
-            SceneManager.LoadScene("OperationMenu"); // fallback
-        }
+        UnityEngine.SceneManagement.SceneManager.LoadScene("OperationMenu");
     }
-
 
 }

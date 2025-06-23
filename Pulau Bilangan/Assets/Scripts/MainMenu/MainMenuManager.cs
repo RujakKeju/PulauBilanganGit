@@ -31,6 +31,8 @@ public class MainMenuManager : MonoBehaviour
             StartCoroutine(FadeInBGM());
         }
     }
+
+
     IEnumerator FadeInBGM()
     {
         float t = 0f;
