@@ -10,6 +10,8 @@ public class NameInputManager : MonoBehaviour
     public GameObject namePanel;
     public GameObject cekAkunPanel;
     public GameObject confirmDeletePanel;
+    public Image selectedkarakter;
+
 
     [Header("Input & Display")]
     public TMP_InputField nameInput;
@@ -22,6 +24,7 @@ public class NameInputManager : MonoBehaviour
     public Button mainButton;
     public Button confirmDeleteYesButton;
     public Button confirmDeleteNoButton;
+
 
     void Start()
     {
@@ -55,6 +58,7 @@ public class NameInputManager : MonoBehaviour
         {
             characterPanel.SetActive(false);
             namePanel.SetActive(false);
+            selectedkarakter.sprite = progress.characterData.characterSprite;
             cekAkunPanel.SetActive(true);
         }
         else
@@ -64,6 +68,8 @@ public class NameInputManager : MonoBehaviour
             cekAkunPanel.SetActive(false);
         }
     }
+
+    
 
     public void OnConfirmNameButton()
     {

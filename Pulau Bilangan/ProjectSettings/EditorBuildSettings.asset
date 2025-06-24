@@ -392,4 +392,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pembagian/Medium/MediumLevel(pembagian) 10.unity
     guid: 8c1749ce658f4b84ba5ffbc36cafde5c
+  - enabled: 1
+    path: Assets/Scenes/Perkalian/Level(perkalian).unity
+    guid: 5563811305895fd458f3ce466b306855
   m_configObjects: {}
