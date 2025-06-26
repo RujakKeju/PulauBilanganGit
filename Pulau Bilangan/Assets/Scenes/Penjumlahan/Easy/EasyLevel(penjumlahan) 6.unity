@@ -389,7 +389,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 90}
-  m_SizeDelta: {x: 280, y: 280}
+  m_SizeDelta: {x: 503, y: 323.0153}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &210354399
 MonoBehaviour:
@@ -448,7 +448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
+  m_Color: {r: 0.64705884, g: 0.64705884, b: 0.64705884, a: 0.27450982}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1295,6 +1295,9 @@ MonoBehaviour:
   - {fileID: 1305610300}
   panelBenar: {fileID: 894172851}
   panelSalah: {fileID: 512753963}
+  audioSource: {fileID: 0}
+  panelBenarSound: {fileID: 0}
+  panelSalahSound: {fileID: 0}
 --- !u!4 &965980720
 Transform:
   m_ObjectHideFlags: 0
@@ -1331,6 +1334,7 @@ MonoBehaviour:
   audioSource: {fileID: 503914275}
   helpContent: PILIH JAWABAN YANG BENAR
   voiceClip: {fileID: 8300000, guid: ac50e9f750a6a58498a731262db89766, type: 3}
+  panelSound: {fileID: 0}
 --- !u!114 &965980722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1351,6 +1355,8 @@ MonoBehaviour:
   buttonKunci: {fileID: 306071148}
   buttonClose: {fileID: 1097507610}
   maxIkan: 50
+  audioSource: {fileID: 0}
+  panelSound: {fileID: 0}
 --- !u!114 &965980723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1646,8 +1652,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 500, y: 90}
-  m_SizeDelta: {x: 280, y: 280}
+  m_AnchoredPosition: {x: 565.2, y: 90}
+  m_SizeDelta: {x: 503, y: 323.0153}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1305610300
 MonoBehaviour:
@@ -1706,7 +1712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.645283, g: 0.645283, b: 0.645283, a: 0}
+  m_Color: {r: 0.64705884, g: 0.64705884, b: 0.64705884, a: 0.27450982}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1934,8 +1940,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -500, y: 90}
-  m_SizeDelta: {x: 300, y: 280}
+  m_AnchoredPosition: {x: -565.32, y: 90}
+  m_SizeDelta: {x: 503, y: 323.0153}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1515924847
 MonoBehaviour:
@@ -1994,7 +2000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.645283, g: 0.645283, b: 0.645283, a: 0}
+  m_Color: {r: 0.64705884, g: 0.64705884, b: 0.64705884, a: 0.27450982}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

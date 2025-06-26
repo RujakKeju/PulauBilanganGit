@@ -7,6 +7,7 @@ public class SFXManager : MonoBehaviour
     [Header("Sound Clips")]
     public AudioClip correctSound;
     public AudioClip wrongSound;
+    public AudioClip winSound;
 
     private AudioSource audioSource;
 
@@ -30,6 +31,11 @@ public class SFXManager : MonoBehaviour
         audioSource.playOnAwake = false;
     }
 
+    public void PlayWin()
+    {   
+    if (winSound != null)
+        audioSource.PlayOneShot(winSound);
+    }
     public void PlayCorrect()
     {
         if (correctSound != null)

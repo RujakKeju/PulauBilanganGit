@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
+
 public class PanelBenarController : MonoBehaviour
 {
     public GameObject popup;
@@ -41,9 +42,14 @@ public class PanelBenarController : MonoBehaviour
         bintang3.SetActive(false);
         textBenar.gameObject.SetActive(false);
 
+        // ▶️ Putar suara menang saat panel muncul
+        if (SFXManager.Instance != null)
+        {
+            SFXManager.Instance.PlayWin();
+        }
+
         StartCoroutine(AnimasiPanel());
 
-        // Assign listener (pastikan tidak dobel)
         btnMainMenu.onClick.RemoveAllListeners();
         btnMainMenu.onClick.AddListener(OnMainMenu);
 
@@ -53,6 +59,7 @@ public class PanelBenarController : MonoBehaviour
         btnNext.onClick.RemoveAllListeners();
         btnNext.onClick.AddListener(OnNextLevelBenar);
     }
+
 
     IEnumerator AnimasiPanel()
     {

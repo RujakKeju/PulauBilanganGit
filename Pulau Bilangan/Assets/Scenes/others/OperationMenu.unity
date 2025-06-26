@@ -2262,6 +2262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctSound: {fileID: 8300000, guid: a56601c5bcd798f4ab140ab07a812fac, type: 3}
   wrongSound: {fileID: 8300000, guid: cfa340c5ba8890c45b1f2efe7fa356bf, type: 3}
+  winSound: {fileID: 8300000, guid: a56601c5bcd798f4ab140ab07a812fac, type: 3}
 --- !u!4 &1497423685
 Transform:
   m_ObjectHideFlags: 0
