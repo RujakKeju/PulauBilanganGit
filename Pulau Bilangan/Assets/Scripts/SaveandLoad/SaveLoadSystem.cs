@@ -81,6 +81,8 @@ public static class SaveLoadSystem
         }
 
         SaveProgress(progress);
+        FirestoreSync.SaveProgressToFirestore(progress);
+
     }
 
 

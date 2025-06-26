@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "24157261038",
+    "project_id": "pulaubilangan-2a7a8",
+    "storage_bucket": "pulaubilangan-2a7a8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24157261038:android:fa308660bf5beb9c7f77ff",
+        "android_client_info": {
+          "package_name": "com.niamah.pulaubilangan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDARLYzgGStuWuvMNvaHhHuxlLG4YHs78E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

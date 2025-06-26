@@ -50,6 +50,9 @@ public class FinishPoinController : MonoBehaviour
         });
 
         Debug.Log($"[FinishPoin] Key: {key} | Data count: {levelProgress.levels.Count}");
+        progress.scorePerKey[key] = Mathf.RoundToInt(persentase);
+        SaveLoadSystem.SaveProgress(progress);
+        FirestoreSync.SaveProgressToFirestore(progress);
 
     }
 

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 [System.Serializable]
@@ -8,13 +8,12 @@ public class PlayerProgress
     public string characterName;
     public CharacterDataSO characterData;
 
-
-    // Ganti dictionary dengan list serializable
     public List<LevelProgressEntry> levelProgressList = new();
 
-    // Runtime-only dictionary (tidak disimpan)
     [System.NonSerialized]
     public Dictionary<string, LevelProgress> levelProgressDict = new();
+
+    public Dictionary<string, int> scorePerKey = new(); // ✅ nilai per kategori
 
     public void BuildDictionary()
     {
@@ -45,7 +44,7 @@ public class LevelProgressEntry
 [Serializable]
 public class LevelProgress
 {
-    public List<LevelEntry> levels = new(); // index 0�9 = level 1�10
+    public List<LevelEntry> levels = new(); // index 0–9 = level 1–10
     public bool difficultyUnlocked;
 }
 
