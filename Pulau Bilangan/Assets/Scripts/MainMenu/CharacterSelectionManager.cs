@@ -1,7 +1,8 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
+using UnityEditor.U2D.Animation;
 
 public class CharacterSelectionManager : MonoBehaviour
 {
@@ -29,6 +30,19 @@ public class CharacterSelectionManager : MonoBehaviour
 
     }
 
+    private void Awake()
+    {
+        if (buttonContainer == null) return;
+
+        foreach (Transform child in buttonContainer)
+        {
+            var highlight = child.Find("Highlight");
+            if (highlight != null)
+                highlight.gameObject.SetActive(false);
+        }
+    }
+
+
     void GenerateCharacterButtons()
     {
         characterButtons.Clear();
@@ -44,6 +58,11 @@ public class CharacterSelectionManager : MonoBehaviour
             GameObject btnObj = Instantiate(characterButtonPrefab, buttonContainer);
             Button btn = btnObj.GetComponent<Button>();
 
+            Image bgImage = btnObj.GetComponent<Image>();
+            if (bgImage != null)
+                bgImage.enabled = false;
+
+
             // Cari Image karakter
             Image characterImage = btnObj.transform.Find("CharacterImage")?.GetComponent<Image>();
             if (characterImage != null)
@@ -51,13 +70,17 @@ public class CharacterSelectionManager : MonoBehaviour
                 characterImage.sprite = characterData[i].characterSprite;
             }
 
-            // Cari highlight (boleh null, tapi kita simpan saja)
+            // HIGHLIGHT – ambil dari btnObj YANG SAMA, bukan instansi baru
             GameObject highlight = btnObj.transform.Find("Highlight")?.gameObject;
             if (highlight != null)
             {
-                highlight.SetActive(false); // default off
+                highlight.SetActive(false);
+                highlightObjects.Add(highlight);
             }
-            highlightObjects.Add(highlight); // walau null, tetap disimpan
+            else
+            {
+                highlightObjects.Add(null);
+            }
 
             characterButtons.Add(btnObj);
 
@@ -74,18 +97,19 @@ public class CharacterSelectionManager : MonoBehaviour
         selectedCharacterImage.sprite = characterData[index].characterSprite;
 
         // Matikan semua highlight
-        for (int i = 0; i < highlightObjects.Count; i++)
+        foreach (var obj in highlightObjects)
         {
-            if (highlightObjects[i] != null)
-                highlightObjects[i].SetActive(false);
+            if (obj != null)
+                obj.SetActive(false);
         }
 
-        // Aktifkan highlight tombol yang dipilih
-        if (highlightObjects[index] != null)
+        // Aktifkan yang dipilih
+        if (highlightObjects.Count > index && highlightObjects[index] != null)
             highlightObjects[index].SetActive(true);
 
         Debug.Log("Selected character: " + characterData[index].characterName);
     }
+
 
 
     public void ConfirmCharacterSelection()

@@ -24,7 +24,7 @@ public class MathLevelManager : MonoBehaviour
         // Tampilkan jawaban, simbol operasi, dan tingkat kesulitan di UI
         jawabanText.text = levelData.jawaban.ToString();
         operasiText.text = levelData.GetOperationSymbol();
-        difficultyText.text = levelData.difficulty.ToString();
+        difficultyText.text = "";
     }
 
     private void SpawnAnimal(int count, Transform parent, GameObject prefab)

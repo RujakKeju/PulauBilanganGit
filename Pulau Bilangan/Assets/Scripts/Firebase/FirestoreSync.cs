@@ -5,6 +5,8 @@ using Firebase.Extensions;
 
 public static class FirestoreSync
 {
+
+
     public static void SaveProgressToFirestore(PlayerProgress progress)
     {
         FirebaseFirestore db = FirebaseFirestore.DefaultInstance;
@@ -50,6 +52,22 @@ public static class FirestoreSync
         dataToSave["scores"] = scoreDict;
 
         dataToSave["progress"] = levelDataDict;
+
+        // Hitung total skor dari scorePerKey
+        int totalScore = 0;
+        int maxScore = 12 * 100;
+
+        foreach (var pair in progress.scorePerKey)
+        {
+            totalScore += pair.Value;
+        }
+
+        float percentage = (float)totalScore / maxScore * 100f;
+        int roundedPercentage = Mathf.RoundToInt(percentage);
+
+        // Tambahkan ke data yang akan dikirim ke Firestore
+        dataToSave["totalPercentage"] = roundedPercentage;
+
 
         db.Collection("players").Document(playerID).SetAsync(dataToSave).ContinueWithOnMainThread(task =>
         {

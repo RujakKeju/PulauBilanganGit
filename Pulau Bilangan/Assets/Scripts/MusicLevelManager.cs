@@ -27,22 +27,53 @@ public class MusicLevelManager : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         string sceneName = scene.name;
 
-        if (sceneName.StartsWith("Level(") || IsLevelScene(sceneName))
+        if (IsSceneInAnyLevelList(sceneName))
         {
-            var state = GameStateManager.Instance;
-            PlayMusicByDifficulty(state.selectedDifficulty);
+            if (GameStateManager.Instance != null)
+                PlayMusicByDifficulty(GameStateManager.Instance.selectedDifficulty);
         }
         else
         {
-            // Stop music in non-level scenes
             if (musicSource.isPlaying)
                 musicSource.Stop();
         }
     }
+
+
+    private bool IsSceneInAnyLevelList(string sceneName)
+    {
+        var allLists = new[]
+        {
+        LevelListProvider.Instance.additionEasy,
+        LevelListProvider.Instance.additionMedium,
+        LevelListProvider.Instance.additionHard,
+        LevelListProvider.Instance.subtractionEasy,
+        LevelListProvider.Instance.subtractionMedium,
+        LevelListProvider.Instance.subtractionHard,
+        LevelListProvider.Instance.multiplicationEasy,
+        LevelListProvider.Instance.multiplicationMedium,
+        LevelListProvider.Instance.multiplicationHard,
+        LevelListProvider.Instance.divisionEasy,
+        LevelListProvider.Instance.divisionMedium,
+        LevelListProvider.Instance.divisionHard
+    };
+
+        foreach (var levelList in allLists)
+        {
+            foreach (string s in levelList.sceneNames)
+            {
+                if (s == sceneName)
+                    return true;
+            }
+        }
+
+        return false;
+    }
+
 
     bool IsLevelScene(string sceneName)
     {
@@ -54,29 +85,28 @@ public class MusicLevelManager : MonoBehaviour
         return false;
     }
 
-    void PlayMusicByDifficulty(Difficulty diff)
+    private void PlayMusicByDifficulty(Difficulty difficulty)
     {
-        if (musicSource == null) return;
+        AudioClip clip = null;
 
-        AudioClip clipToPlay = null;
-        switch (diff)
+        switch (difficulty)
         {
             case Difficulty.Easy:
-                clipToPlay = easyClip;
+                clip = easyClip;
                 break;
             case Difficulty.Medium:
-                clipToPlay = mediumClip;
+                clip = mediumClip;
                 break;
             case Difficulty.Hard:
-                clipToPlay = hardClip;
+                clip = hardClip;
                 break;
         }
 
-        if (clipToPlay != null && musicSource.clip != clipToPlay)
+        if (clip != null && musicSource.clip != clip)
         {
-            musicSource.clip = clipToPlay;
-            musicSource.loop = true;
+            musicSource.clip = clip;
             musicSource.Play();
         }
     }
+
 }

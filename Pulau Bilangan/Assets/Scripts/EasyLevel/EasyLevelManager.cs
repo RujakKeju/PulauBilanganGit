@@ -46,7 +46,7 @@ public class EasyLevelManager : MonoBehaviour
 
         jawabanText.text = "?";
         operasiText.text = levelData.GetOperationSymbol();
-        difficultyText.text = levelData.difficulty.ToString();
+        difficultyText.text = "";
     }
 
     private void GenerateAnswers()

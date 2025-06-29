@@ -1192,6 +1192,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70acf5f0bcc915f4286ca8fdc78b4ccf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  easyButton: {fileID: 1674667342}
+  mediumButton: {fileID: 1388598694}
+  hardButton: {fileID: 1310105414}
 --- !u!1 &1169978092
 GameObject:
   m_ObjectHideFlags: 0

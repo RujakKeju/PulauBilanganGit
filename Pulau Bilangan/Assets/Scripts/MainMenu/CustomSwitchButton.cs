@@ -4,55 +4,53 @@ using TMPro;
 
 public class CustomSwitchButton : MonoBehaviour
 {
-    public RectTransform handle;        // lingkaran ●
-    public TextMeshProUGUI label;       // teks ON/OFF
+    public TextMeshProUGUI label;
     public Color onColor = Color.green;
     public Color offColor = Color.red;
-    public float offset = 60f;          // jarak geser handle
+
+    public delegate void SwitchChanged(bool isOn);
+    public event SwitchChanged OnToggleChanged;
 
     private bool isOn = true;
     private Button button;
-    private Image bgImage;
 
     void Awake()
     {
         button = GetComponent<Button>();
-        bgImage = GetComponent<Image>();
         button.onClick.AddListener(Toggle);
     }
 
     void Start()
     {
-        // Load status dari PlayerPrefs
         isOn = PlayerPrefs.GetInt(gameObject.name, 1) == 1;
-        ApplyVisual(false);
+        ApplyVisual();
     }
 
     void Toggle()
     {
         isOn = !isOn;
         PlayerPrefs.SetInt(gameObject.name, isOn ? 1 : 0);
-        ApplyVisual(true);
+        ApplyVisual();
+        OnToggleChanged?.Invoke(isOn);
     }
 
-    void ApplyVisual(bool animate)
+    public void SetState(bool state)
     {
-        label.text = isOn ? "ON" : "OFF";
-        bgImage.color = isOn ? onColor : offColor;
-
-        float targetX = isOn ? offset : -offset;
-
-        if (animate)
-        {
-            LeanTween.moveLocalX(handle.gameObject, targetX, 0.15f).setEaseOutQuad();
-        }
-        else
-        {
-            var pos = handle.localPosition;
-            pos.x = targetX;
-            handle.localPosition = pos;
-        }
+        isOn = state;
+        ApplyVisual();
     }
 
-    public bool IsOn() => isOn;
+    private void ApplyVisual()
+    {
+        if (label != null)
+            label.text = isOn ? "ON" : "OFF";
+
+        if (button != null)
+        {
+            var colors = button.colors;
+            colors.normalColor = isOn ? onColor : offColor;
+            colors.selectedColor = colors.normalColor;
+            button.colors = colors;
+        }
+    }
 }

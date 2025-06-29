@@ -99,11 +99,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Pengurangan/Easy/EasyLevel(pengurangan) 1.unity
     guid: 805cddfa2e9287f4aabf1aa80c8501d4
   - enabled: 1
-    path: Assets/Scenes/Penjumlahan/Medium/MediumLevel(penjumlahan) 2.unity
-    guid: 2d34481acd995f74f9b990f047fd4a29
-  - enabled: 1
     path: Assets/Scenes/Penjumlahan/Medium/MediumLevel(penjumlahan) 1.unity
     guid: c2758ff40eaeea64396f1b97cf87a940
+  - enabled: 1
+    path: Assets/Scenes/Penjumlahan/Medium/MediumLevel(penjumlahan) 2.unity
+    guid: 2d34481acd995f74f9b990f047fd4a29
   - enabled: 1
     path: Assets/Scenes/Penjumlahan/Medium/MediumLevel(penjumlahan) 3.unity
     guid: 106beff3299db3046a00ae57e378a5c1

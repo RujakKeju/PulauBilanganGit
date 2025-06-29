@@ -11,25 +11,40 @@ public class PanelBenarController : MonoBehaviour
     public GameObject bintang1, bintang2, bintang3;
     public TextMeshProUGUI textBenar;
     public EasyLevelManager easyLevelManager;
-
+    public MediumLevelManager mediumLevelManager;
+    public HardLevelManager hardLevelManager;
 
     public Button btnMainMenu, btnReplay, btnNext;
+
+
 
     void Awake()
     {
         if (easyLevelManager == null)
-        {
             easyLevelManager = FindObjectOfType<EasyLevelManager>();
-        }
+        if (mediumLevelManager == null)
+            mediumLevelManager = FindObjectOfType<MediumLevelManager>();
+        if (hardLevelManager == null)
+            hardLevelManager = FindObjectOfType<HardLevelManager>();
+
     }
     void Start()
     {
         btnNext.onClick.RemoveAllListeners();
         btnNext.onClick.AddListener(() =>
         {
-            easyLevelManager.TombolNextSoal(true);
+            if (easyLevelManager != null)
+                easyLevelManager.TombolNextSoal(true);
+
+            if (mediumLevelManager != null)
+                mediumLevelManager.TombolNextSoal(true);
+
+            if (hardLevelManager != null)
+                hardLevelManager.TombolNextSoal(true);
+
             OnNextLevelBenar();
         });
+
     }
 
 

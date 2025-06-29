@@ -32,7 +32,7 @@ public class HardLevelManager : MonoBehaviour
 
         Bilangan2.text = "0";
         operasiText.text = levelData.GetOperationSymbol();
-        difficultyText.text = levelData.difficulty.ToString();
+        difficultyText.text = "";
     }
 
     private void SpawnFish(int count, Transform parent, GameObject prefab)
@@ -53,5 +53,34 @@ public class HardLevelManager : MonoBehaviour
         {
             wrongPanel.SetActive(true);
         }
+    }
+
+    public void TombolNextSoal(bool jawabanBenar)
+    {
+        var state = GameStateManager.Instance;
+        string key = state.GetProgressKey();
+        int levelIndex = state.currentLevelIndex;
+
+        var progress = SaveLoadSystem.LoadProgress();
+
+        if (!progress.levelProgressDict.ContainsKey(key))
+        {
+            var lp = new LevelProgress();
+            for (int i = 0; i < 10; i++) lp.levels.Add(new LevelEntry());
+            progress.levelProgressDict[key] = lp;
+        }
+
+        while (progress.levelProgressDict[key].levels.Count <= levelIndex)
+        {
+            progress.levelProgressDict[key].levels.Add(new LevelEntry());
+        }
+
+        var current = progress.levelProgressDict[key].levels[levelIndex];
+        current.isCompleted = true;
+        current.isCorrect = jawabanBenar;
+
+        SaveLoadSystem.SaveProgress(progress);
+
+        Debug.Log($"[TombolNextSoal] Saved for {key} | index {levelIndex} | benar: {jawabanBenar}");
     }
 }

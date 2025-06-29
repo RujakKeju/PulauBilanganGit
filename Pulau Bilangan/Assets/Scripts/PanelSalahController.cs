@@ -12,14 +12,17 @@ public class PanelSalahController : MonoBehaviour // Changed class name
     public Button btnMainMenu, btnReplay, btnNext;
 
     public EasyLevelManager easyLevelManager;
-
+    public MediumLevelManager mediumLevelManager;
+    public HardLevelManager hardLevelManager;
 
     void Awake()
     {
         if (easyLevelManager == null)
-        {
             easyLevelManager = FindObjectOfType<EasyLevelManager>();
-        }
+        if (mediumLevelManager == null)
+            mediumLevelManager = FindObjectOfType<MediumLevelManager>();
+        if (hardLevelManager == null)
+            hardLevelManager = FindObjectOfType<HardLevelManager>();
     }
 
 
@@ -28,7 +31,15 @@ public class PanelSalahController : MonoBehaviour // Changed class name
         btnNext.onClick.RemoveAllListeners();
         btnNext.onClick.AddListener(() =>
         {
-            easyLevelManager.TombolNextSoal(false);
+            if (easyLevelManager != null)
+                easyLevelManager.TombolNextSoal(false);
+
+            if (mediumLevelManager != null)
+                mediumLevelManager.TombolNextSoal(false);
+
+            if (hardLevelManager != null)
+                hardLevelManager.TombolNextSoal(false);
+
             OnNextSoalDariPanelSalah();
         });
     }

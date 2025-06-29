@@ -20,6 +20,12 @@ public class NameInputManager : MonoBehaviour
     public Image pialaFill;
     public TextMeshProUGUI percentageText;
 
+    [Header("Cek Akun")]
+    public TextMeshProUGUI displayNamaTeks;
+    public Image piala_palsu;
+    public Image karakterImage;
+    public TextMeshProUGUI persenTeks;
+
     [Header("Buttons")]
     public Button mainButton;
     public Button confirmDeleteYesButton;
@@ -97,39 +103,47 @@ public class NameInputManager : MonoBehaviour
 
         if (!string.IsNullOrEmpty(progress.playerName))
             displayNameText.text = progress.playerName;
+            displayNamaTeks.text = progress.playerName;
 
         if (progress.characterData != null && progress.characterData.characterSprite != null)
             characterImage.sprite = progress.characterData.characterSprite;
+        karakterImage.sprite = progress.characterData.characterSprite;
 
         float percentage = HitungTotalPersentase(progress);
         percentageText.text = Mathf.RoundToInt(percentage).ToString() + "%";
+        persenTeks.text = Mathf.RoundToInt(percentage).ToString() + "%";
 
         if (pialaFill != null)
         {
             pialaFill.fillAmount = percentage / 100f;
         }
+
+        if (piala_palsu != null)
+        {
+            piala_palsu.fillAmount = percentage / 100f;
+        }
     }
 
     float HitungTotalPersentase(PlayerProgress progress)
     {
-        int totalBenar = 0;
-        int totalSoal = 0;
+        int totalScore = 0;
+        int maxScore = 12 * 100;
 
-        foreach (var entry in progress.levelProgressDict)
+        Debug.Log($"[Persen] Total Keys in scorePerKey: {progress.scorePerKey.Count}");
+
+        foreach (var entry in progress.scorePerKey)
         {
-            foreach (var lvl in entry.Value.levels)
-            {
-                if (lvl.isCompleted)
-                {
-                    totalSoal++;
-                    if (lvl.isCorrect) totalBenar++;
-                }
-            }
+            Debug.Log($"[Persen] Key: {entry.Key} | Score: {entry.Value}");
+            totalScore += entry.Value;
         }
 
-        if (totalSoal == 0) return 0f;
-        return (float)totalBenar / totalSoal * 100f;
+        float percentage = (float)totalScore / maxScore * 100f;
+        Debug.Log($"[Persen] totalScore: {totalScore} / {maxScore} => {percentage}%");
+
+        return Mathf.Clamp(percentage, 0f, 100f);
     }
+
+
 
     public void DeleteAccount()
     {

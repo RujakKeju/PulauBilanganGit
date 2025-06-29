@@ -9,27 +9,41 @@ public class CrabMovement : MonoBehaviour
     [Header("Zone Limit")]
     public Collider2D sandZone;
 
+    public AudioSource audioSource;
+    public AudioClip walkingSound;
+
     private Rigidbody2D rb;
     private Camera mainCamera;
     private Vector3 velocity = Vector3.zero;
 
+    private SpriteRenderer spriteRenderer;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.interpolation = RigidbodyInterpolation2D.Interpolate; // Interpolasi untuk gerakan halus
+        audioSource = GetComponent<AudioSource>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        rb.interpolation = RigidbodyInterpolation2D.Interpolate;
         mainCamera = Camera.main;
+
+        if (audioSource.clip == null && walkingSound != null)
+            audioSource.clip = walkingSound;
+
+        audioSource.loop = true;
+        audioSource.playOnAwake = false;
     }
 
     void Update()
     {
-        // Ambil input gerakan
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
+
+        HandleFacingDirection();
+        HandleWalkingSound();
     }
 
     void FixedUpdate()
     {
-        // Gerakkan kepiting dalam FixedUpdate
         Vector2 newPosition = rb.position + moveInput * moveSpeed * Time.fixedDeltaTime;
 
         if (IsInsideSandZone(newPosition))
@@ -38,6 +52,34 @@ public class CrabMovement : MonoBehaviour
         }
 
         SmoothFollowCamera();
+    }
+
+    void HandleFacingDirection()
+    {
+        if (moveInput.x > 0)
+        {
+            spriteRenderer.flipX = false; // hadap kanan
+        }
+        else if (moveInput.x < 0)
+        {
+            spriteRenderer.flipX = true; // hadap kiri
+        }
+    }
+
+    void HandleWalkingSound()
+    {
+        bool isMoving = moveInput.sqrMagnitude > 0.01f;
+
+        if (isMoving)
+        {
+            if (!audioSource.isPlaying)
+                audioSource.Play();
+        }
+        else
+        {
+            if (audioSource.isPlaying)
+                audioSource.Pause();
+        }
     }
 
     bool IsInsideSandZone(Vector2 position)
@@ -51,11 +93,13 @@ public class CrabMovement : MonoBehaviour
         Vector3 crabPos = transform.position;
         Vector3 camPos = mainCamera.transform.position;
 
-        // Hanya geser kamera ke kanan jika kepiting maju
-        if (crabPos.x > camPos.x)
+        // Perbaikan: Kamera mengikuti dengan margin threshold agar tidak 'getar' ke kiri
+        float margin = 1f;
+
+        if (Mathf.Abs(crabPos.x - camPos.x) > margin)
         {
             Vector3 targetPosition = new Vector3(crabPos.x, camPos.y, camPos.z);
-            mainCamera.transform.position = Vector3.SmoothDamp(camPos, targetPosition, ref velocity, 0.2f); // Smooth
+            mainCamera.transform.position = Vector3.SmoothDamp(camPos, targetPosition, ref velocity, 0.2f);
         }
     }
 
@@ -71,15 +115,13 @@ public class CrabMovement : MonoBehaviour
 
             SpriteRenderer crabSprite = GetComponent<SpriteRenderer>();
 
-            if (diffY > 0.2f) // Dari bawah (harus tetap di depan)
+            if (diffY > 0.2f)
             {
-                Debug.Log("Tidak bisa masuk dari bawah.");
                 crabSprite.sortingOrder = 2;
             }
-            else if (diffX > 0.2f || diffX < -0.2f || diffY < -0.2f) // Dari kiri, kanan, atau atas (masuk ke belakang batu)
+            else
             {
-                Debug.Log("Masuk ke belakang batu.");
-                crabSprite.sortingOrder = 1; // Di belakang batu
+                crabSprite.sortingOrder = 1;
             }
         }
     }
@@ -88,10 +130,8 @@ public class CrabMovement : MonoBehaviour
     {
         if (collision.CompareTag("Rock"))
         {
-            Debug.Log("Keluar dari batu, kembali ke depan.");
-            GetComponent<SpriteRenderer>().sortingOrder = 3; // Kembali ke depan batu
+            GetComponent<SpriteRenderer>().sortingOrder = 3;
         }
     }
-
 
 }

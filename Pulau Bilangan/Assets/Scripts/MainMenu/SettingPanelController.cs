@@ -7,11 +7,12 @@ public class SettingPanelController : MonoBehaviour
     public GameObject panelSetting;
     public RectTransform panelPapanSetting;
 
-    [Header("Buttons & Toggles")]
+    [Header("Buttons & Switchbutton")]
     public Button buttonSetting;
     public Button buttonClose;
-    public Toggle toggleSound;
-    public Toggle toggleMusic;
+    public CustomSwitchButton switchSound;
+    public CustomSwitchButton switchMusic;
+
 
     [Header("Colors")]
     public Color onColor = Color.green;
@@ -20,29 +21,29 @@ public class SettingPanelController : MonoBehaviour
     void Start()
     {
         // Load setting dari PlayerPrefs
-        bool isSoundOn = PlayerPrefs.GetInt("SoundEnabled", 1) == 1;
-        bool isMusicOn = PlayerPrefs.GetInt("MusicEnabled", 1) == 1;
+        bool isSoundOn = PlayerPrefs.GetInt("SoundSwitch", 1) == 1;
+        bool isMusicOn = PlayerPrefs.GetInt("MusicSwitch", 1) == 1;
 
-        toggleSound.isOn = isSoundOn;
-        toggleMusic.isOn = isMusicOn;
+        if (switchSound != null)
+        {
+            switchSound.SetState(isSoundOn); // Set posisi awal
+            switchSound.OnToggleChanged += SetSound; // Tambah listener
+        }
 
-        UpdateToggleVisual(toggleSound, isSoundOn);
-        UpdateToggleVisual(toggleMusic, isMusicOn);
-
-        toggleSound.onValueChanged.AddListener(SetSound);
-        toggleMusic.onValueChanged.AddListener(SetMusic);
+        if (switchMusic != null)
+        {
+            switchMusic.SetState(isMusicOn);
+            switchMusic.OnToggleChanged += SetMusic;
+        }
 
         buttonSetting.onClick.AddListener(ShowPanel);
         buttonClose.onClick.AddListener(ClosePanel);
-
-        // Panel disembunyikan di awal
         panelSetting.SetActive(false);
     }
 
     void SetSound(bool isOn)
     {
-        PlayerPrefs.SetInt("SoundEnabled", isOn ? 1 : 0);
-        UpdateToggleVisual(toggleSound, isOn);
+        PlayerPrefs.SetInt("SoundSwitch", isOn ? 1 : 0);
 
         foreach (var obj in GameObject.FindGameObjectsWithTag("Sound"))
         {
@@ -53,10 +54,9 @@ public class SettingPanelController : MonoBehaviour
         }
     }
 
-    void SetMusic(bool isOn)
+    public void SetMusic(bool isOn)
     {
-        PlayerPrefs.SetInt("MusicEnabled", isOn ? 1 : 0);
-        UpdateToggleVisual(toggleMusic, isOn);
+        PlayerPrefs.SetInt("MusicSwitch", isOn ? 1 : 0);
 
         foreach (var obj in GameObject.FindGameObjectsWithTag("Music"))
         {
@@ -66,6 +66,7 @@ public class SettingPanelController : MonoBehaviour
                 obj.SetActive(isOn);
         }
     }
+
 
     void UpdateToggleVisual(Toggle toggle, bool isOn)
     {

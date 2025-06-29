@@ -1350,7 +1350,7 @@ GameObject:
   - component: {fileID: 889447320}
   m_Layer: 0
   m_Name: MusicManager
-  m_TagString: Untagged
+  m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1405,7 +1405,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f18f7f72a6f9c2a42b5b8974c91cfef1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.605
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1506,7 +1506,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &901104726
 Transform:
   m_ObjectHideFlags: 0
@@ -1536,7 +1536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 901104728}
   easyClip: {fileID: 8300000, guid: b2357c55f28a13a4f809d4899f5d71a0, type: 3}
-  mediumClip: {fileID: 8300000, guid: 020629aff232a7541889c0d78772758d, type: 3}
+  mediumClip: {fileID: 8300000, guid: 1700d3b5b94d35a428b81a773887ed9b, type: 3}
   hardClip: {fileID: 8300000, guid: 0c7e14274abe00244a3f2eeeccef8250, type: 3}
 --- !u!82 &901104728
 AudioSource:
@@ -1550,7 +1550,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.51
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2049,6 +2049,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a73e27a27bc654787da8580f92583e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tambahButton: {fileID: 1674667342}
+  kurangButton: {fileID: 558263240}
+  kaliButton: {fileID: 170587400}
+  bagiButton: {fileID: 1681503013}
 --- !u!4 &1205102664
 Transform:
   m_ObjectHideFlags: 0
@@ -2243,7 +2247,7 @@ GameObject:
   - component: {fileID: 1497423684}
   m_Layer: 0
   m_Name: SFXManager
-  m_TagString: Untagged
+  m_TagString: Sound
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -9,6 +9,9 @@ public class PlayerProgress
     public CharacterDataSO characterData;
 
     public List<LevelProgressEntry> levelProgressList = new();
+    public List<ScoreEntry> scorePerKeyList = new(); // sebagai gantinya untuk serialisasi
+
+
 
     [System.NonSerialized]
     public Dictionary<string, LevelProgress> levelProgressDict = new();
@@ -19,9 +22,11 @@ public class PlayerProgress
     {
         levelProgressDict.Clear();
         foreach (var entry in levelProgressList)
-        {
             levelProgressDict[entry.key] = entry.progress;
-        }
+
+        scorePerKey.Clear();
+        foreach (var entry in scorePerKeyList)
+            scorePerKey[entry.key] = entry.score;
     }
 
     public void SyncFromDictionary()
@@ -31,7 +36,14 @@ public class PlayerProgress
         {
             levelProgressList.Add(new LevelProgressEntry { key = kvp.Key, progress = kvp.Value });
         }
+
+        scorePerKeyList.Clear();
+        foreach (var kvp in scorePerKey)
+        {
+            scorePerKeyList.Add(new ScoreEntry { key = kvp.Key, score = kvp.Value });
+        }
     }
+
 }
 
 [System.Serializable]
@@ -54,4 +66,12 @@ public class LevelEntry
     public bool isCompleted;  // true = sudah pernah dikerjakan
     public bool isCorrect;    // true = jawabannya benar
 }
+
+[System.Serializable]
+public class ScoreEntry
+{
+    public string key;
+    public int score;
+}
+
 

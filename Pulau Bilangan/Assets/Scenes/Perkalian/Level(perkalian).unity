@@ -3316,6 +3316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1599070324}
   - component: {fileID: 1599070323}
+  - component: {fileID: 1599070325}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -3365,6 +3366,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1599070325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599070322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094c3e77fe5497a4d8e4ccf916c580c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  telurImages:
+  - {fileID: 1209311722}
+  - {fileID: 1915426215}
+  - {fileID: 1459787836}
+  - {fileID: 531174840}
+  - {fileID: 2064360683}
+  - {fileID: 934295179}
+  - {fileID: 868337760}
+  - {fileID: 463869088}
+  - {fileID: 1100978594}
+  - {fileID: 1580155376}
+  telurDefaultSprite: {fileID: 21300000, guid: fbc2a5bb0fb23d54c8566b258f80d3df, type: 3}
+  telurBenarSprites:
+  - {fileID: 21300000, guid: c95d22387f73e1249ab745e69f6b2a01, type: 3}
+  - {fileID: 21300000, guid: 888a988765feeab469743346d99aae94, type: 3}
+  - {fileID: 21300000, guid: 3149cb1ab89511743aea994237eb9d74, type: 3}
+  - {fileID: 21300000, guid: 3fe3a79d1cf3c7d4d877711e35007137, type: 3}
+  - {fileID: 21300000, guid: 81a5a2d53cb01514ba3b5f0a65157f87, type: 3}
+  - {fileID: 21300000, guid: 890748e0ee7ba714db89da23795e49e3, type: 3}
+  - {fileID: 21300000, guid: 113524a9de85f3d4d81134df1e128b83, type: 3}
+  - {fileID: 21300000, guid: e9359202028d5984e84d0c40d7d271fe, type: 3}
+  - {fileID: 21300000, guid: a408571083335044a8c9ebcfae0405cb, type: 3}
+  - {fileID: 21300000, guid: 9e62c7fe12e986a4d8365009ca6f102c, type: 3}
+  telurSalahSprites:
+  - {fileID: 21300000, guid: 9cc87528b6f64654eaee90d2c5be72cf, type: 3}
+  - {fileID: 21300000, guid: c1e12ee3938087d4cb17ebe52818ebdc, type: 3}
+  - {fileID: 21300000, guid: acdc2a37d583ec24fa2710e64d2f2924, type: 3}
+  - {fileID: 21300000, guid: 1c0c621eb74718941a5ec3f392df86fd, type: 3}
+  - {fileID: 21300000, guid: 10990ebdfd7b92041a6ab9077bdee6a5, type: 3}
+  - {fileID: 21300000, guid: 39478bb0b49093b4a85181ef4f20ecfd, type: 3}
+  - {fileID: 21300000, guid: 025eb17c3642cc54dbb7e86f62495ab0, type: 3}
+  - {fileID: 21300000, guid: 73b0d016b81881e4693857b5b5b868d3, type: 3}
+  - {fileID: 21300000, guid: 823fee1bb6e9dd24184ec0f48de040ca, type: 3}
+  - {fileID: 21300000, guid: e2200a5252b41bc4d9253acd43012abc, type: 3}
 --- !u!1 &1653505209
 GameObject:
   m_ObjectHideFlags: 0

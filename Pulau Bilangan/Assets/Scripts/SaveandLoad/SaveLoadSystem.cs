@@ -16,10 +16,7 @@ public static class SaveLoadSystem
             Debug.Log($"[SaveProgress] Key: {kvp.Key} | Level Count: {kvp.Value.levels.Count}");
     }
 
-    //public static PlayerProgress ClearProggres()
-    //{
-    //    return;
-    //}
+
 
     public static PlayerProgress LoadProgress()
     {
