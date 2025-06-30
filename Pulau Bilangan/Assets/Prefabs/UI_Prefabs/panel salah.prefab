@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 1535873686007569154}
   - component: {fileID: 658071386008424783}
   m_Layer: 5
-  m_Name: Button_MainMenu
+  m_Name: Button_Home
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -689,7 +689,7 @@ GameObject:
   - component: {fileID: 5763743581212458887}
   - component: {fileID: 8462402337283044262}
   m_Layer: 5
-  m_Name: Button_Replay
+  m_Name: Button_Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -742,7 +742,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 238932252f7ae3f49aac2475a9d71aac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 44d098e1839d3dc4b96895502d759202, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -897,3 +897,5 @@ MonoBehaviour:
   btnReplay: {fileID: 8462402337283044262}
   btnNext: {fileID: 1266024957886772740}
   easyLevelManager: {fileID: 0}
+  mediumLevelManager: {fileID: 0}
+  hardLevelManager: {fileID: 0}

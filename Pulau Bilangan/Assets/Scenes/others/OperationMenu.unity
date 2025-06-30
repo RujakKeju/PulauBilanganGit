@@ -1535,7 +1535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSource: {fileID: 901104728}
-  easyClip: {fileID: 8300000, guid: b2357c55f28a13a4f809d4899f5d71a0, type: 3}
+  easyClip: {fileID: 8300000, guid: 0b537dba3741a2b4691c3387a194b665, type: 3}
   mediumClip: {fileID: 8300000, guid: 1700d3b5b94d35a428b81a773887ed9b, type: 3}
   hardClip: {fileID: 8300000, guid: 0c7e14274abe00244a3f2eeeccef8250, type: 3}
 --- !u!82 &901104728

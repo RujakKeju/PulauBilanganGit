@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bilangan1: 10
   bilangan2: 2
-  jawaban: 2
+  jawaban: 8
   operation: 1
   difficulty: 0
   animalPrefab1: {fileID: 8557411065781987861, guid: aa202874138c0e442b3ab37f023921e1, type: 3}

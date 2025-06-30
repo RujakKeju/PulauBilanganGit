@@ -968,7 +968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec988809a56358f42ab07df5ba0faaf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1254981342}
   followSpeed: 10
   offsetAmount: 0.8
   fixedOffset: {x: 0, y: 1.2, z: -10}
@@ -1980,7 +1980,7 @@ MonoBehaviour:
   correctPanel: {fileID: 1856785058}
   wrongPanel: {fileID: 1409403671}
   checkAnswerButton: {fileID: 1991174546}
-  sharkCollector: {fileID: 0}
+  sharkCollector: {fileID: 1254981341}
 --- !u!114 &1118921718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2061,7 +2061,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1127784699
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2682,6 +2682,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2839233278398398008, guid: 21df4fe5d6ce2234e871ac48be97b303, type: 3}
+      propertyPath: uiManager
+      value: 
+      objectReference: {fileID: 680400774}
     - target: {fileID: 3599802198664384530, guid: 21df4fe5d6ce2234e871ac48be97b303, type: 3}
       propertyPath: m_Name
       value: JellFishPlayer
@@ -2731,6 +2735,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21df4fe5d6ce2234e871ac48be97b303, type: 3}
+--- !u!114 &1254981341 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2839233278398398008, guid: 21df4fe5d6ce2234e871ac48be97b303, type: 3}
+  m_PrefabInstance: {fileID: 1254981340}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 375310c6af73bcb44a38a804bfd1dab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1254981342 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8558669427854142429, guid: 21df4fe5d6ce2234e871ac48be97b303, type: 3}
+  m_PrefabInstance: {fileID: 1254981340}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1272449021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4726,6 +4746,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 667692901}
   - {fileID: 1846171686}
+  - {fileID: 1254981340}
   - {fileID: 3999793534663315590}
   - {fileID: 2140524539}
   - {fileID: 1984416004}
@@ -4745,4 +4766,3 @@ SceneRoots:
   - {fileID: 680400775}
   - {fileID: 1118921716}
   - {fileID: 2131782695}
-  - {fileID: 1254981340}

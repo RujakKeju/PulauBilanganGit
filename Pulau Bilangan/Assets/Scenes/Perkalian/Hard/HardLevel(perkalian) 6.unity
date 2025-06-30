@@ -2059,7 +2059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec988809a56358f42ab07df5ba0faaf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1179590036}
   followSpeed: 10
   offsetAmount: 2
   fixedOffset: {x: 0, y: 3, z: -10}
@@ -3553,7 +3553,7 @@ MonoBehaviour:
   correctPanel: {fileID: 835197365}
   wrongPanel: {fileID: 1447065289}
   checkAnswerButton: {fileID: 1991174546}
-  fishCollector: {fileID: 0}
+  fishCollector: {fileID: 1179590035}
 --- !u!114 &1118921718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3953,6 +3953,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3155141476000334764, guid: dfe8c125109ffb7418fccda0fd01923e, type: 3}
+      propertyPath: uiManager
+      value: 
+      objectReference: {fileID: 680400774}
     - target: {fileID: 6507352979827337307, guid: dfe8c125109ffb7418fccda0fd01923e, type: 3}
       propertyPath: m_Name
       value: PenyuPlayer
@@ -3962,6 +3966,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfe8c125109ffb7418fccda0fd01923e, type: 3}
+--- !u!114 &1179590035 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3155141476000334764, guid: dfe8c125109ffb7418fccda0fd01923e, type: 3}
+  m_PrefabInstance: {fileID: 1179590034}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc584432b5261794685156b4f8a2e321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1179590036 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2931664366471351326, guid: dfe8c125109ffb7418fccda0fd01923e, type: 3}
+  m_PrefabInstance: {fileID: 1179590034}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1185681820
 GameObject:
   m_ObjectHideFlags: 0
@@ -6428,6 +6448,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 667692901}
   - {fileID: 1846171686}
+  - {fileID: 1179590034}
   - {fileID: 2134722267}
   - {fileID: 1958013148}
   - {fileID: 1119872771}
@@ -6442,4 +6463,3 @@ SceneRoots:
   - {fileID: 680400775}
   - {fileID: 898356479}
   - {fileID: 1118921716}
-  - {fileID: 1179590034}

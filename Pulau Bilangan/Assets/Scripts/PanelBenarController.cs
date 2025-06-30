@@ -14,7 +14,7 @@ public class PanelBenarController : MonoBehaviour
     public MediumLevelManager mediumLevelManager;
     public HardLevelManager hardLevelManager;
 
-    public Button btnMainMenu, btnReplay, btnNext;
+    public Button btnHome, btnMenu, btnNext;
 
 
 
@@ -65,11 +65,11 @@ public class PanelBenarController : MonoBehaviour
 
         StartCoroutine(AnimasiPanel());
 
-        btnMainMenu.onClick.RemoveAllListeners();
-        btnMainMenu.onClick.AddListener(OnMainMenu);
+        btnHome.onClick.RemoveAllListeners();
+        btnHome.onClick.AddListener(OnMainMenu);
 
-        btnReplay.onClick.RemoveAllListeners();
-        btnReplay.onClick.AddListener(OnReplay);
+        btnMenu.onClick.RemoveAllListeners();
+        btnMenu.onClick.AddListener(OnReplay);
 
         btnNext.onClick.RemoveAllListeners();
         btnNext.onClick.AddListener(OnNextLevelBenar);
