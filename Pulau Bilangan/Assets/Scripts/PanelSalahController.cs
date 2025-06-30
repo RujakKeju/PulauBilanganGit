@@ -9,11 +9,13 @@ public class PanelSalahController : MonoBehaviour // Changed class name
     public GameObject bintang1;
     public TextMeshProUGUI textSalah; // Changed variable name to textSalah
 
-    public Button btnMainMenu, btnReplay, btnNext;
+    public Button btnHome, btnMenu, btnNext;
 
     public EasyLevelManager easyLevelManager;
     public MediumLevelManager mediumLevelManager;
     public HardLevelManager hardLevelManager;
+    public SharkLevelManager sharkLevelManager;
+
 
     void Awake()
     {
@@ -23,6 +25,9 @@ public class PanelSalahController : MonoBehaviour // Changed class name
             mediumLevelManager = FindObjectOfType<MediumLevelManager>();
         if (hardLevelManager == null)
             hardLevelManager = FindObjectOfType<HardLevelManager>();
+        if (sharkLevelManager == null)
+            sharkLevelManager = FindObjectOfType<SharkLevelManager>();
+
     }
 
 
@@ -40,6 +45,10 @@ public class PanelSalahController : MonoBehaviour // Changed class name
             if (hardLevelManager != null)
                 hardLevelManager.TombolNextSoal(false);
 
+            if (sharkLevelManager != null)
+                sharkLevelManager.TombolNextSoal(false);
+
+
             OnNextSoalDariPanelSalah();
         });
     }
@@ -48,11 +57,27 @@ public class PanelSalahController : MonoBehaviour // Changed class name
 
     private void OnEnable()
     {
+        var state = GameStateManager.Instance;
+
+        string key = state.GetProgressKey();
+
+        var progress = SaveLoadSystem.LoadProgress();
+
         popup.transform.localScale = Vector3.zero;
         bintang1.SetActive(false);
         textSalah.gameObject.SetActive(false); // Referencing textSalah
 
         StartCoroutine(AnimasiPanel());
+
+        btnHome.onClick.RemoveAllListeners();
+        btnHome.onClick.AddListener(OnMainMenu);
+
+        btnMenu.onClick.RemoveAllListeners();
+        btnMenu.onClick.AddListener(() =>
+        {
+            string op = ConvertOperationToBahasa(state.selectedOperation);
+            SceneTransitioner.Instance.LoadSceneWithTransition("Level(" + op + ")");
+        });
     }
 
     IEnumerator AnimasiPanel()
@@ -82,8 +107,25 @@ public class PanelSalahController : MonoBehaviour // Changed class name
         }
         else
         {
-            SceneTransitioner.Instance.LoadSceneWithTransition("FinishPoin");
+            string finishSceneName = "FinishScene(" + ConvertOperationToBahasa(state.selectedOperation) + ")";
+            SceneTransitioner.Instance.LoadSceneWithTransition(finishSceneName);
         }
+    }
+    public void OnMainMenu()
+    {
+        SceneTransitioner.Instance.LoadSceneWithTransition("MainMenu");
+    }
+
+    public string ConvertOperationToBahasa(MathOperation op)
+    {
+        return op switch
+        {
+            MathOperation.Addition => "penjumlahan",
+            MathOperation.Subtraction => "pengurangan",
+            MathOperation.Multiplication => "perkalian",
+            MathOperation.Division => "pembagian",
+            _ => "unknown"
+        };
     }
 
 }

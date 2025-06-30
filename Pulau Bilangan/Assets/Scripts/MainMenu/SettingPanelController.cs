@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public class SettingPanelController : MonoBehaviour
 {
+    public static SettingPanelController Instance;
+
     [Header("Panel")]
     public GameObject panelSetting;
     public RectTransform panelPapanSetting;
@@ -17,6 +19,16 @@ public class SettingPanelController : MonoBehaviour
     [Header("Colors")]
     public Color onColor = Color.green;
     public Color offColor = Color.red;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else Destroy(gameObject);
+    }
 
     void Start()
     {

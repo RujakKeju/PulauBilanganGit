@@ -13,6 +13,8 @@ public class PanelBenarController : MonoBehaviour
     public EasyLevelManager easyLevelManager;
     public MediumLevelManager mediumLevelManager;
     public HardLevelManager hardLevelManager;
+    public SharkLevelManager sharkLevelManager;
+
 
     public Button btnHome, btnMenu, btnNext;
 
@@ -26,10 +28,15 @@ public class PanelBenarController : MonoBehaviour
             mediumLevelManager = FindObjectOfType<MediumLevelManager>();
         if (hardLevelManager == null)
             hardLevelManager = FindObjectOfType<HardLevelManager>();
+        if (sharkLevelManager == null)
+            sharkLevelManager = FindObjectOfType<SharkLevelManager>();
+
 
     }
     void Start()
     {
+
+
         btnNext.onClick.RemoveAllListeners();
         btnNext.onClick.AddListener(() =>
         {
@@ -41,6 +48,8 @@ public class PanelBenarController : MonoBehaviour
 
             if (hardLevelManager != null)
                 hardLevelManager.TombolNextSoal(true);
+            if (sharkLevelManager != null)
+                sharkLevelManager.TombolNextSoal(true);
 
             OnNextLevelBenar();
         });
@@ -51,6 +60,12 @@ public class PanelBenarController : MonoBehaviour
 
     private void OnEnable()
     {
+        var state = GameStateManager.Instance;
+
+        string key = state.GetProgressKey();
+
+        var progress = SaveLoadSystem.LoadProgress();
+
         popup.transform.localScale = Vector3.zero;
         bintang1.SetActive(false);
         bintang2.SetActive(false);
@@ -69,7 +84,11 @@ public class PanelBenarController : MonoBehaviour
         btnHome.onClick.AddListener(OnMainMenu);
 
         btnMenu.onClick.RemoveAllListeners();
-        btnMenu.onClick.AddListener(OnReplay);
+        btnMenu.onClick.AddListener(() =>
+        {
+            string op = ConvertOperationToBahasa(state.selectedOperation);
+            SceneTransitioner.Instance.LoadSceneWithTransition("Level(" + op + ")");
+        });
 
         btnNext.onClick.RemoveAllListeners();
         btnNext.onClick.AddListener(OnNextLevelBenar);
@@ -99,12 +118,14 @@ public class PanelBenarController : MonoBehaviour
 
     public void OnMainMenu()
     {
-        SceneManager.LoadScene("Level(Penjumlahan)");
+        SceneTransitioner.Instance.LoadSceneWithTransition("MainMenu");
     }
 
-    public void OnReplay()
+    public void OnLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+
+
     }
 
     public void OnNextLevelBenar()
@@ -121,9 +142,21 @@ public class PanelBenarController : MonoBehaviour
         }
         else
         {
-            SceneTransitioner.Instance.LoadSceneWithTransition("FinishPoin");
+            string finishSceneName = "FinishScene(" + ConvertOperationToBahasa(state.selectedOperation) + ")";
+            SceneTransitioner.Instance.LoadSceneWithTransition(finishSceneName);
         }
     }
 
+    public string ConvertOperationToBahasa(MathOperation op)
+    {
+        return op switch
+        {
+            MathOperation.Addition => "penjumlahan",
+            MathOperation.Subtraction => "pengurangan",
+            MathOperation.Multiplication => "perkalian",
+            MathOperation.Division => "pembagian",
+            _ => "unknown"
+        };
+    }
 
 }

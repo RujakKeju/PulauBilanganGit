@@ -497,7 +497,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5872352559749688690
 RectTransform:
   m_ObjectHideFlags: 0
@@ -576,8 +576,9 @@ MonoBehaviour:
   easyLevelManager: {fileID: 0}
   mediumLevelManager: {fileID: 0}
   hardLevelManager: {fileID: 0}
-  btnMainMenu: {fileID: 1159156253282580734}
-  btnReplay: {fileID: 4497218879084106159}
+  sharkLevelManager: {fileID: 0}
+  btnHome: {fileID: 1159156253282580734}
+  btnMenu: {fileID: 4497218879084106159}
   btnNext: {fileID: 1771173562567604545}
 --- !u!1 &5108348794776185884
 GameObject:
