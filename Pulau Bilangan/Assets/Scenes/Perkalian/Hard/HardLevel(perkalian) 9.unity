@@ -676,7 +676,7 @@ PrefabInstance:
     - target: {fileID: 1944592284015435749, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 44d098e1839d3dc4b96895502d759202, type: 3}
+      objectReference: {fileID: 21300000, guid: 15a898d762e0c2e4bad330ae0a63ca97, type: 3}
     - target: {fileID: 1944592284015435749, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -812,7 +812,7 @@ PrefabInstance:
     - target: {fileID: 7323248148113622018, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 238932252f7ae3f49aac2475a9d71aac, type: 3}
+      objectReference: {fileID: 21300000, guid: 44d098e1839d3dc4b96895502d759202, type: 3}
     - target: {fileID: 7323248148113622018, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -3435,7 +3435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8763701953248152315, guid: aefd1bcb9f61dde4ba2ff1b79f3b8138, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -25
+      value: -44
       objectReference: {fileID: 0}
     - target: {fileID: 8763701953248152315, guid: aefd1bcb9f61dde4ba2ff1b79f3b8138, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4588,7 +4588,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.85177803, y: 1.4373357}
+  m_Offset: {x: -0.6118078, y: 1.4373357}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4599,7 +4599,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 21.647282, y: 6.3920856}
+  m_Size: {x: 18.72011, y: 6.3920856}
   m_EdgeRadius: 0
 --- !u!61 &1037123895
 BoxCollider2D:
@@ -4633,7 +4633,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.2467136, y: 1.4315271}
+  m_Offset: {x: -0.21687746, y: 1.4315271}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4644,7 +4644,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20.848095, y: 6.70518}
+  m_Size: {x: 17.920914, y: 6.70518}
   m_EdgeRadius: 0
 --- !u!212 &1037123896
 SpriteRenderer:
@@ -5208,7 +5208,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1127784699
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5863,7 +5863,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.85177803, y: 1.4373357}
+  m_Offset: {x: 2.0072396, y: 1.4373357}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5874,7 +5874,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 21.647282, y: 6.3920856}
+  m_Size: {x: 19.336359, y: 6.3920856}
   m_EdgeRadius: 0
 --- !u!61 &1291359933
 BoxCollider2D:
@@ -5908,7 +5908,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.2467136, y: 1.4315271}
+  m_Offset: {x: 2.0170197, y: 1.4315271}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5919,7 +5919,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20.848095, y: 6.70518}
+  m_Size: {x: 19.307484, y: 6.70518}
   m_EdgeRadius: 0
 --- !u!212 &1291359934
 SpriteRenderer:
@@ -6380,7 +6380,7 @@ PrefabInstance:
     - target: {fileID: 1535873686007569154, guid: d002d2dcd92031e40bed1e7ed36ab0fa, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 44d098e1839d3dc4b96895502d759202, type: 3}
+      objectReference: {fileID: 21300000, guid: 15a898d762e0c2e4bad330ae0a63ca97, type: 3}
     - target: {fileID: 6740645516681706186, guid: d002d2dcd92031e40bed1e7ed36ab0fa, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

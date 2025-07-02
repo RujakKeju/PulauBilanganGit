@@ -69,7 +69,7 @@ public static class FirestoreSync
         dataToSave["totalPercentage"] = roundedPercentage;
 
 
-        db.Collection("players").Document(playerID).SetAsync(dataToSave).ContinueWithOnMainThread(task =>
+        db.Collection("pulau_bilangan").Document(playerID).SetAsync(dataToSave).ContinueWithOnMainThread(task =>
         {
             if (task.IsCompleted && !task.IsFaulted)
                 Debug.Log("[FIRESTORE] Data berhasil disimpan!");

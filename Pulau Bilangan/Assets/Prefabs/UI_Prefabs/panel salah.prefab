@@ -893,9 +893,10 @@ MonoBehaviour:
   popup: {fileID: 9052429414407120303}
   bintang1: {fileID: 6366539135558420948}
   textSalah: {fileID: 8589792045448537163}
-  btnMainMenu: {fileID: 658071386008424783}
-  btnReplay: {fileID: 8462402337283044262}
+  btnHome: {fileID: 658071386008424783}
+  btnMenu: {fileID: 8462402337283044262}
   btnNext: {fileID: 1266024957886772740}
   easyLevelManager: {fileID: 0}
   mediumLevelManager: {fileID: 0}
   hardLevelManager: {fileID: 0}
+  sharkLevelManager: {fileID: 0}

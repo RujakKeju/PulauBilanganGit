@@ -1073,22 +1073,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1185681824}
     m_Modifications:
-    - target: {fileID: 1944592284015435749, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 44d098e1839d3dc4b96895502d759202, type: 3}
-    - target: {fileID: 1944592284015435749, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1944592284015435749, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1944592284015435749, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4666392898329405040, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
       propertyPath: m_Name
       value: Panel benar
@@ -1177,101 +1161,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5891697107663826302, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: btnHome
-      value: 
-      objectReference: {fileID: 600673796}
-    - target: {fileID: 5891697107663826302, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: btnMenu
-      value: 
-      objectReference: {fileID: 600673797}
-    - target: {fileID: 6170335645796099639, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: ac4d2aa27ea213340ac300c1ebcf26dc, type: 3}
-    - target: {fileID: 6170335645796099639, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6170335645796099639, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6170335645796099639, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6774851938414304449, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 6774851938414304449, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 7237987087254715296, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 7237987087254715296, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 7323248148113622018, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 44d098e1839d3dc4b96895502d759202, type: 3}
-    - target: {fileID: 7323248148113622018, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7323248148113622018, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7323248148113622018, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7363069471111894758, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_Color.a
-      value: 0.84705883
-      objectReference: {fileID: 0}
-    - target: {fileID: 7798063050014307460, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 7798063050014307460, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 150
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
---- !u!114 &600673796 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1159156253282580734, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-  m_PrefabInstance: {fileID: 600673795}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &600673797 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4497218879084106159, guid: 847aea1850f5315429ab26acba8cfe27, type: 3}
-  m_PrefabInstance: {fileID: 600673795}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &622307046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2126,10 +2020,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1185681824}
     m_Modifications:
-    - target: {fileID: 1535873686007569154, guid: d002d2dcd92031e40bed1e7ed36ab0fa, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 44d098e1839d3dc4b96895502d759202, type: 3}
     - target: {fileID: 6740645516681706186, guid: d002d2dcd92031e40bed1e7ed36ab0fa, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2213,6 +2103,10 @@ PrefabInstance:
     - target: {fileID: 9052429414407120303, guid: d002d2dcd92031e40bed1e7ed36ab0fa, type: 3}
       propertyPath: m_Name
       value: panel salah
+      objectReference: {fileID: 0}
+    - target: {fileID: 9052429414407120303, guid: d002d2dcd92031e40bed1e7ed36ab0fa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -107,7 +107,7 @@ public class PanelSalahController : MonoBehaviour // Changed class name
         }
         else
         {
-            string finishSceneName = "FinishScene(" + ConvertOperationToBahasa(state.selectedOperation) + ")";
+            string finishSceneName = "FinishPoin(" + ConvertOperationToBahasa(state.selectedOperation) + ")";
             SceneTransitioner.Instance.LoadSceneWithTransition(finishSceneName);
         }
     }
