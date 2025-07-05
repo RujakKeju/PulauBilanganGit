@@ -376,7 +376,7 @@ MonoBehaviour:
   buttonClose: {fileID: 1923315634}
   buttonSound: {fileID: 1135378991}
   audioSource: {fileID: 0}
-  helpContent: PINDAHKAN KELOMANGF KE GUNUNGAN PASIR
+  helpContent: PINDAHKAN KELOMANG KE GUNUNGAN PASIR
   voiceClip: {fileID: 0}
   panelSound: {fileID: 0}
 --- !u!114 &56231773
