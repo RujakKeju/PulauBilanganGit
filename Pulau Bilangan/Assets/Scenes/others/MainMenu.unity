@@ -646,7 +646,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &89012865
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6311,7 +6311,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: APAKAH INGIN KELUAR DARI PERMAINAN?
+  m_text: YAKIN INGIN KELUAR DARI PERMAINAN?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7d0f17686169a0f4581cba2da2c6478c, type: 2}
   m_sharedMaterial: {fileID: -5786308333785937809, guid: 7d0f17686169a0f4581cba2da2c6478c, type: 2}
