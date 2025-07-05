@@ -102,12 +102,18 @@ public class NameInputManager : MonoBehaviour
         var progress = SaveLoadSystem.LoadProgress();
 
         if (!string.IsNullOrEmpty(progress.playerName))
+        {
             displayNameText.text = progress.playerName;
             displayNamaTeks.text = progress.playerName;
+        }
+
 
         if (progress.characterData != null && progress.characterData.characterSprite != null)
+        {
             characterImage.sprite = progress.characterData.characterSprite;
-        karakterImage.sprite = progress.characterData.characterSprite;
+            karakterImage.sprite = progress.characterData.characterSprite;
+        }
+
 
         float percentage = HitungTotalPersentase(progress);
         percentageText.text = Mathf.RoundToInt(percentage).ToString() + "%";
