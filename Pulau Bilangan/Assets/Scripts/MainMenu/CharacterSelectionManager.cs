@@ -2,7 +2,6 @@
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
-using UnityEditor.U2D.Animation;
 
 public class CharacterSelectionManager : MonoBehaviour
 {
