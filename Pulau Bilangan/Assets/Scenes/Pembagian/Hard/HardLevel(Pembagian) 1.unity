@@ -4048,6 +4048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: panel_pause
       objectReference: {fileID: 0}
+    - target: {fileID: 1141830958130987227, guid: 334b37d8d3747a8419f1d2410fdbb821, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2371574759620975882, guid: 334b37d8d3747a8419f1d2410fdbb821, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
