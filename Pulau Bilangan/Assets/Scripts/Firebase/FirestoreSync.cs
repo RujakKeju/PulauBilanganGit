@@ -16,7 +16,6 @@ public static class FirestoreSync
         Dictionary<string, object> dataToSave = new Dictionary<string, object>
         {
             { "playerName", progress.playerName },
-            { "characterName", progress.characterName },
             { "savedAt", Timestamp.GetCurrentTimestamp() }
         };
 

@@ -349,7 +349,7 @@ MonoBehaviour:
   buttonClose: {fileID: 210466019}
   buttonSound: {fileID: 1042866468}
   audioSource: {fileID: 0}
-  helpContent: PINDAHKAN UBUR-UBUR KE DALAM LAUT
+  helpContent: PINDAHKAN IKAN BUNTAL KE DALAM AIR
   voiceClip: {fileID: 0}
   panelSound: {fileID: 0}
 --- !u!114 &56231773
@@ -810,7 +810,7 @@ PrefabInstance:
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 57a0856aa4c7e0342805e211599eb0cf, type: 3}
+      objectReference: {fileID: 21300000, guid: 51eec6b957267b14d917326440f1fe66, type: 3}
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_SortingOrder
       value: 3
@@ -1592,7 +1592,7 @@ PrefabInstance:
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 57a0856aa4c7e0342805e211599eb0cf, type: 3}
+      objectReference: {fileID: 21300000, guid: 51eec6b957267b14d917326440f1fe66, type: 3}
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_SortingOrder
       value: 3
@@ -2092,7 +2092,7 @@ PrefabInstance:
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 57a0856aa4c7e0342805e211599eb0cf, type: 3}
+      objectReference: {fileID: 21300000, guid: 51eec6b957267b14d917326440f1fe66, type: 3}
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_SortingOrder
       value: 3
@@ -2738,7 +2738,7 @@ PrefabInstance:
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 57a0856aa4c7e0342805e211599eb0cf, type: 3}
+      objectReference: {fileID: 21300000, guid: 51eec6b957267b14d917326440f1fe66, type: 3}
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_SortingOrder
       value: 3
@@ -3891,7 +3891,7 @@ PrefabInstance:
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 57a0856aa4c7e0342805e211599eb0cf, type: 3}
+      objectReference: {fileID: 21300000, guid: 51eec6b957267b14d917326440f1fe66, type: 3}
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_SortingOrder
       value: 3
@@ -4189,7 +4189,7 @@ PrefabInstance:
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 57a0856aa4c7e0342805e211599eb0cf, type: 3}
+      objectReference: {fileID: 21300000, guid: 51eec6b957267b14d917326440f1fe66, type: 3}
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_SortingOrder
       value: 3
@@ -4560,7 +4560,7 @@ PrefabInstance:
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 57a0856aa4c7e0342805e211599eb0cf, type: 3}
+      objectReference: {fileID: 21300000, guid: 51eec6b957267b14d917326440f1fe66, type: 3}
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_SortingOrder
       value: 3
@@ -5494,7 +5494,7 @@ PrefabInstance:
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 57a0856aa4c7e0342805e211599eb0cf, type: 3}
+      objectReference: {fileID: 21300000, guid: 51eec6b957267b14d917326440f1fe66, type: 3}
     - target: {fileID: 3926477945263388560, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_SortingOrder
       value: 3

@@ -365,7 +365,7 @@ MonoBehaviour:
   buttonClose: {fileID: 1923315634}
   buttonSound: {fileID: 1135378991}
   audioSource: {fileID: 0}
-  helpContent: MASUKKAN IKAN KE DALAM LAUT
+  helpContent: MASUKKAN IKAN KUNING KE DALAM AIR LAUT
   voiceClip: {fileID: 0}
   panelSound: {fileID: 0}
 --- !u!114 &56231773

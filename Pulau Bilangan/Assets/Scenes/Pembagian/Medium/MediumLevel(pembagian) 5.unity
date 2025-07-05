@@ -349,7 +349,7 @@ MonoBehaviour:
   buttonClose: {fileID: 210466019}
   buttonSound: {fileID: 1042866468}
   audioSource: {fileID: 0}
-  helpContent: PINDAHKAN PINDAHKAN IKAN KE DALAM AIR
+  helpContent: PINDAHKAN KUDA LAUT KE DALAM AIR
   voiceClip: {fileID: 0}
   panelSound: {fileID: 0}
 --- !u!114 &56231773

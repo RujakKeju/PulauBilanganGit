@@ -3339,7 +3339,7 @@ MonoBehaviour:
   buttonClose: {fileID: 1771274056}
   buttonSound: {fileID: 2063162454}
   audioSource: {fileID: 0}
-  helpContent: KUMPULKAN HEWAN DENGAN MENGGERAKKAN PENYU
+  helpContent: KUMPULKAN KEPITING DENGAN MENGGERAKKAN PENYU
   voiceClip: {fileID: 0}
   panelSound: {fileID: 0}
 --- !u!114 &1118921719

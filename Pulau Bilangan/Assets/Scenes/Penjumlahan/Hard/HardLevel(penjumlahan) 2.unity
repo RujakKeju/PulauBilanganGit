@@ -340,11 +340,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2323901188039551387, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.57
+      value: 10.44
       objectReference: {fileID: 0}
     - target: {fileID: 2323901188039551387, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.66
+      value: -2.72
       objectReference: {fileID: 0}
     - target: {fileID: 2323901188039551387, guid: d12762e89c02da547b718ea83ff281d8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1722,7 +1722,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.15591049, y: -0.54671013}
+  m_Offset: {x: -0.12321401, y: -0.54671}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1733,7 +1733,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.149194, y: 8.182758}
+  m_Size: {x: 7.590945, y: 8.182758}
   m_EdgeRadius: 0
 --- !u!61 &712221338
 BoxCollider2D:
@@ -2154,7 +2154,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.7321217, y: -0.25914538}
+  m_Offset: {x: 0.42815685, y: -0.25914526}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2165,7 +2165,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.879043, y: 6.6466227}
+  m_Size: {x: 5.558486, y: 6.6466227}
   m_EdgeRadius: 0
 --- !u!61 &775460609
 BoxCollider2D:
@@ -2199,7 +2199,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.6652169, y: -0.09077287}
+  m_Offset: {x: 0.26755583, y: -0.09077287}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2210,7 +2210,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.522727, y: 7.2261977}
+  m_Size: {x: 5.6571817, y: 7.2261977}
   m_EdgeRadius: 0
 --- !u!212 &775460610
 SpriteRenderer:
@@ -2705,7 +2705,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 567122a8a261bdd42aad3122d14b9a96, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3362,7 +3362,7 @@ MonoBehaviour:
   buttonClose: {fileID: 1771274056}
   buttonSound: {fileID: 2063162454}
   audioSource: {fileID: 0}
-  helpContent: KUMPULKAN HERMITCRAB DENGAN MENGGERAKKAN KEPITING
+  helpContent: KUMPULKAN KELOMANG DENGAN MENGGERAKKAN KEPITING
   voiceClip: {fileID: 0}
   panelSound: {fileID: 0}
 --- !u!114 &1118921719

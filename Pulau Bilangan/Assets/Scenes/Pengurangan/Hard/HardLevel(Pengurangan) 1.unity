@@ -2700,7 +2700,7 @@ MonoBehaviour:
   buttonClose: {fileID: 510093416}
   buttonSound: {fileID: 1565029555}
   audioSource: {fileID: 0}
-  helpContent: GERAKKAN HIU UNTUK MEMAKAN IKAN
+  helpContent: GERAKKAN IKAN HIU UNTUK MEMAKAN IKAN DORI
   voiceClip: {fileID: 0}
   panelSound: {fileID: 0}
 --- !u!114 &1118921720
